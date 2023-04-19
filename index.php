@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 // basis verwijzing
-const ROOT = "/Hacka";
+const ROOT = "/UnescoWebsite";
 
 // classes
 require_once("classes/Pages.php");
