@@ -33,7 +33,7 @@ session_start();
             <link rel="stylesheet" href="../style.css">
         <?php endif; ?>
         
-        <title>Unesco app</title>
+        <title>UNESCO Guardians</title>
     </head>
     <body>
     </body>
