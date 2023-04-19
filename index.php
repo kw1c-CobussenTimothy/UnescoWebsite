@@ -7,6 +7,7 @@ const ROOT = "/UnescoWebsite";
 
 // classes
 require_once("classes/Pages.php");
+require_once("classes/DBConn.php");
 
 // session_start wordt zo opgeroepen over de gehele website
 session_start();
@@ -25,7 +26,7 @@ session_start();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <!-- icon -->
         <?php $page = Pages::getHeader(); ?>
-        <?php if ($page == "" || $page == "home" ) : ?>
+        <?php if ($page == "" || $page == "home" || $page == "portaal" || $page == "quiz") : ?>
             <link rel="icon" href="images/">
             <link rel="stylesheet" href="style.css">
         <?php else : ?>
@@ -36,6 +37,18 @@ session_start();
         <title>UNESCO Guardians</title>
     </head>
     <body>
+        <!-- pages worden zo opgeroepen -->
+        <?php
+        $page = Pages::getHeader();
+
+        if ($page == "Start" ) {
+            require_once("pages" . $page . ".php");
+        } else {
+            $page = empty($page) ? "Start" : $page;
+
+            require_once("pages/" . $page . ".php");
+        }
+        ?>
     </body>
 
 </html>
