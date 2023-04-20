@@ -9,20 +9,20 @@ body{
 #image1 
 {
     background: transparent;
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 4px;
     display: block;
     margin: 0.5em auto;
     margin-right: 1px;
     margin-left: 135px;
-    width: 150px;
+    width: 200px;
     float: left;
 }
 
 #image2
 {
     background: transparent;
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 4px;
     display: block;
     margin: 0.5em auto;
@@ -34,7 +34,7 @@ body{
 #image3
 {
     background: transparent;
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 4px;
     display: block;
     margin: 0.5em auto;
@@ -46,7 +46,7 @@ body{
 #image4
 {
     background: transparent;
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 4px;
     display: block;
     margin: 0.5em auto;
@@ -58,7 +58,7 @@ body{
 #image5
 {
     background: transparent;
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 4px;
     display: block;
     margin: 0.5em auto;
@@ -70,7 +70,7 @@ body{
 #image6
 {
     background: transparent;
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 4px;
     display: block;
     margin: 0.5em auto;
