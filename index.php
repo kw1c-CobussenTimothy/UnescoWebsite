@@ -27,7 +27,7 @@ session_start();
         
     <!-- icon -->
         <?php $page = Pages::getHeader(); ?>
-            <link rel="icon" href="./images/LogoWebIcon.png">
+            <link rel="icon" href="./images/schildlogo.png">
             <link rel="stylesheet" href="style.css">
         
         <title>UNESCO Guardians</title>
