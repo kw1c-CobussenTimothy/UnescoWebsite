@@ -22,3 +22,79 @@ body{
     margin-left: 8%; /* Center the image horizontally */
   }
   
+/* Portretten */
+/* Telefoonformaat 150px, websiteformaat 200px */
+
+#image1 
+{
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5em auto;
+    margin-right: 1px;
+    margin-left: 135px;
+    width: 150px;
+    float: left;
+}
+
+#image2
+{
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5em auto;
+    margin-right: 1px;
+    margin-left: 0;
+    width: 200px;
+    float: left;
+}
+#image3
+{
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5em auto;
+    margin-right: 1px;
+    margin-left: 0;
+    width: 200px;
+    float: left;
+}
+#image4
+{
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5em auto;
+    margin-right: 1px;
+    margin-left: 0;
+    width: 200px;
+    float: left;
+}
+#image5
+{
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5em auto;
+    margin-right: 1px;
+    margin-left: 0;
+    width: 200px;
+    float: left;
+}
+#image6
+{
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5em auto;
+    margin-right: 1px;
+    margin-left: 0;
+    width: 200px;
+    float: left;
+}
