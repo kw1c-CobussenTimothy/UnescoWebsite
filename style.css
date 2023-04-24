@@ -3,27 +3,19 @@ body{
     color: white;
 }
 
-.logo-start{
-    position: absolute;
-    margin-top: 37.5vh;
-}
-
-.begin-lijn{
-    position: relative;
-    margin-top: 103.5vh;
-    margin-left: 4.5vh;
-}
-
-.my-custom-image-class {
-    max-width: 200vh; /* Set the maximum width of the image */
+.beginlijn-class {
+    max-width: 200%; /* Set the maximum width of the image */
     width: 140%; /* Make the image responsive */
-    height: 150%; /* Make the image responsive */
+    height: 145%; /* Make the image responsive */ /* Remove any default inline styles */
+    margin-left: 8%; /* Center the image horizontally */
+}
+.heldenlijn-class {
+    max-width: 300%; /* Set the maximum width of the image */
+    width: 140%; /* Make the image responsive */
+    height: 200%; /* Make the image responsive */
     display: block; /* Remove any default inline styles */
     margin-left: 8%; /* Center the image horizontally */
-  }
-  
-/* Portretten */
-/* Telefoonformaat 150px, websiteformaat 200px */
+}
 
 #image1 
 {
