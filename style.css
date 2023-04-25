@@ -16,7 +16,24 @@ body{
     display: block; /* Remove any default inline styles */
     margin-left: 8%; /* Center the image horizontally */
 }
-
+.eindlijn-class{
+    max-width: 300%; /* Set the maximum width of the image */
+    width: 140%; /* Make the image responsive */
+    height: 200%; /* Make the image responsive */
+    display: block; /* Remove any default inline styles */
+    margin-left: 8%; /* Center the image horizontally */
+}
+.karakters-einde{
+    width: 200%;
+}
+.bsch-background{
+    background-color: #528AAE;
+    height: 12%;
+    width: 50%;
+}
+.txt-button{
+    font-size: 1vh;
+}
 #image1 
 {
     background: transparent;
