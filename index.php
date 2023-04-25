@@ -38,7 +38,7 @@ session_start();
         $page = Pages::getHeader();
 
         if ($page == "Start" ) {
-            require_once("pages" . $page . ".php");
+            require_once("pages/" . $page . ".php");
         } else {
             $page = empty($page) ? "Start" : $page;
 
