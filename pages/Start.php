@@ -1,5 +1,5 @@
 <main>
-<div class="">
+  <!--Start pagina, met behulp van de javascript code krijg je het effect dat je door het portaal-->
   <div class="row">
     <div class="">
       <div id="image" onclick="showNextImage()">
@@ -7,7 +7,6 @@
         <img src="images/overgang.png" id="overgang2" class="img-fluid overgang-class" style="display:none; border: none;">
       </div>
     </div>
-  </div>
 </div>
 
 <script>

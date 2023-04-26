@@ -1,4 +1,5 @@
 <main>
+        <!--Hierin staan de afbeeldingen voor het portaal en met behulp van boostrap is het ook responsive-->
   <div class="container">
     <div class="row">
         <div class="col-12 col-lg-6 d-flex mx-5 justify-content-center align-items-center" style="margin-top: 44vh;">
@@ -7,6 +8,7 @@
         </div>
         </div>
         <div class="col-12 col-lg-6 mx-5 d-flex justify-content-center">
+        <!--Buttons met informatie-->
         <p>
             <h1 class="mt-5" style="position: absolute;" data-toggle="collapse" data-target="#loper">Loper</h1>
                 <div class="bsch-background" style="position: absolute; margin-top: 10%; margin-right: 50%;" id="loper" class="collapse">
