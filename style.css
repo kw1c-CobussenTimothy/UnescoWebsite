@@ -31,6 +31,18 @@ body{
     height: 12%;
     width: 50%;
 }
+.portaal-class{
+    margin-top: 70%;
+    max-width: 200%;
+    width: 150%;
+    height: 80%;
+}
+.overgang-class{
+    max-width: 300%;
+    width: 140%;
+    height: 200%;
+    display: block;
+}
 .txt-button{
     font-size: 1vh;
 }
