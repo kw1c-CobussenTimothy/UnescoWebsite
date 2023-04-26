@@ -1,0 +1,109 @@
+body{
+    background-color: #180035;
+    color: white;
+}
+
+.beginlijn-class {
+    max-width: 200%; /* Set the maximum width of the image */
+    width: 140%; /* Make the image responsive */
+    height: 145%; /* Make the image responsive */ /* Remove any default inline styles */
+    margin-left: 8%; /* Center the image horizontally */
+}
+.heldenlijn-class {
+    max-width: 300%; /* Set the maximum width of the image */
+    width: 140%; /* Make the image responsive */
+    height: 200%; /* Make the image responsive */
+    display: block; /* Remove any default inline styles */
+    margin-left: 8%; /* Center the image horizontally */
+}
+.eindlijn-class{
+    max-width: 300%; /* Set the maximum width of the image */
+    width: 140%; /* Make the image responsive */
+    height: 200%; /* Make the image responsive */
+    display: block; /* Remove any default inline styles */
+    margin-left: 8%; /* Center the image horizontally */
+}
+.karakters-einde{
+    width: 200%;
+}
+.bsch-background{
+    background-color: #528AAE;
+    height: 12%;
+    width: 50%;
+}
+.txt-button{
+    font-size: 1vh;
+}
+#image1 
+{
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5em auto;
+    margin-right: 1px;
+    margin-left: 135px;
+    width: 150px;
+    float: left;
+}
+
+#image2
+{
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5em auto;
+    margin-right: 1px;
+    margin-left: 0;
+    width: 200px;
+    float: left;
+}
+#image3
+{
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5em auto;
+    margin-right: 1px;
+    margin-left: 0;
+    width: 200px;
+    float: left;
+}
+#image4
+{
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5em auto;
+    margin-right: 1px;
+    margin-left: 0;
+    width: 200px;
+    float: left;
+}
+#image5
+{
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5em auto;
+    margin-right: 1px;
+    margin-left: 0;
+    width: 200px;
+    float: left;
+}
+#image6
+{
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 4px;
+    display: block;
+    margin: 0.5em auto;
+    margin-right: 1px;
+    margin-left: 0;
+    width: 200px;
+    float: left;
+}
