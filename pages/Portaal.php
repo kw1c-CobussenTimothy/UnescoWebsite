@@ -10,14 +10,38 @@
         <div class="col-12 col-lg-6 mx-5 d-flex justify-content-center">
         <!--Buttons met informatie-->
         <p>
-            <h1 class="mt-5" style="position: absolute;" data-toggle="collapse" data-target="#loper">Loper</h1>
-                <div class="bsch-background" style="position: absolute; margin-top: 10%; margin-right: 50%;" id="loper" class="collapse">
-                    <h1>De loper</h1>
+        <h1 class="mt-5" style="position: absolute;" data-toggle="collapse" data-target="#loper">test</h1>
+                <div class="b-background collapse show" style="position: absolute; margin-top: 10%; margin-right: 50%;" id="loper">
+                        <h1>Test</h1>
+                        <p class="txt-button bb-background">
+                        De loper mag meerdere velden schuin bewegen en slaan. <br> 
+                        Hij loopt dus over diagonalen. <br> 
+                        Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
+                        hetzelfde geldt voor een loper op een wit veld.
+                        </p>                           
+                </div>
+        </p>
+        <p>
+        <h1 style="position: absolute; margin-top: 50%;" data-toggle="collapse" data-target="#hallo">Hallo</h1>
+                <div class="bsch-background collapse show" style="position: absolute; margin-top: 55%; margin-right: 50%;" id="hallo">
+                        <h1>Test</h1>
                         <p class="txt-button">
-                            De loper mag meerdere velden schuin bewegen en slaan. <br> 
-                            Hij loopt dus over diagonalen. <br> 
-                            Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
-                            hetzelfde geldt voor een loper op een wit veld.
+                        De loper mag meerdere velden schuin bewegen en slaan. <br> 
+                        Hij loopt dus over diagonalen. <br> 
+                        Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
+                        hetzelfde geldt voor een loper op een wit veld.
+                        </p>                           
+                </div>
+        </p>
+        <p>
+        <h1 style="position: absolute; margin-top: 100%;" data-toggle="collapse" data-target="#bob">bob</h1>
+                <div class="bsch-background collapse show" style="position: absolute; margin-top: 105%; margin-right: 50%;" id="bob">
+                        <h1>Test</h1>
+                        <p class="txt-button">
+                        De loper mag meerdere velden schuin bewegen en slaan. <br> 
+                        Hij loopt dus over diagonalen. <br> 
+                        Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
+                        hetzelfde geldt voor een loper op een wit veld.
                         </p>                           
                 </div>
         </p>
@@ -34,3 +58,8 @@
         </div>
   </div>
 </main>
+<script>
+        document.querySelector('#loper').classList.remove('show');
+        document.querySelector('#hallo').classList.remove('show');
+        document.querySelector('#bob').classList.remove('show');
+</script>

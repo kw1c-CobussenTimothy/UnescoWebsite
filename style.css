@@ -26,6 +26,14 @@ body{
 .karakters-einde{
     width: 200%;
 }
+.b-background{
+    background-color: #1283d3;
+    height: 12%;
+    width: 50%;
+}
+.bb-background{
+    background-color: #0f65a3;
+}
 .bsch-background{
     background-color: #528AAE;
     height: 12%;
