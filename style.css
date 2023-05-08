@@ -34,10 +34,37 @@ body{
 .bb-background{
     background-color: #0f65a3;
 }
-.bsch-background{
-    background-color: #528AAE;
+.b-background1{
+    background-color: #c52929;
     height: 12%;
     width: 50%;
+}
+.bb-background1{
+    background-color: #e23535;
+}
+.b-background2{
+    background-color: #8f29ca;
+    height: 12%;
+    width: 50%;
+}
+.bb-background2{
+    background-color: #a93ce8 ;
+}
+.b-background3{
+    background-color: #a3e06d;
+    height: 12%;
+    width: 50%;
+}
+.bb-background3{
+    background-color: #c2f496 ;
+}
+.b-background4{
+    background-color: #fbde5f;
+    height: 12%;
+    width: 50%;
+}
+.bb-background4{
+    background-color: #dfcb6e ;
 }
 .portaal-class{
     margin-top: 70%;
