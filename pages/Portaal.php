@@ -69,6 +69,32 @@
                         </p>                           
                 </div>
         </p>
+        <p>
+        <h1 style="position: absolute; margin-top: 480%;" data-toggle="collapse" data-target="#sep">sep</h1>
+                <div class="b-background5 collapse show" style="position: absolute; margin-top: 485%; margin-left: 50%;" id="sep">
+                        <h1>Test</h1>
+                        <p class="txt-button bb-background5">
+                        De loper mag meerdere velden schuin bewegen en slaan. <br> 
+                        Hij loopt dus over diagonalen. <br> 
+                        Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
+                        hetzelfde geldt voor een loper op een wit veld.
+                        </p>                           
+                </div>
+        </p>
+        <p>
+        <h1 style="position: absolute; margin-top: 580%;" data-toggle="collapse" data-target="#tom">tom</h1>
+                <div class="b-background6 collapse show" style="position: absolute; margin-top: 585%; margin-right: 50%;" id="tom">
+                        <h1>Test</h1>
+                        <p class="txt-button bb-background6">
+                        De loper mag meerdere velden schuin bewegen en slaan. <br> 
+                        Hij loopt dus over diagonalen. <br> 
+                        Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
+                        hetzelfde geldt voor een loper op een wit veld.
+                        </p>                           
+                </div>
+        </p>
+        <button style="position: absolute; margin-top: 700%; font-size: 300%;" class="btn btn-quiz" onclick="window.location.href = 'quiz';">Quiz</button>
+
                 <img src="./images/beginlijn.png" class="beginlijn-class img-fluid">            
         </div>
         <div class="col-12 col-lg-6 mx-5 d-flex justify-content-center" style="margin-top: 131%;">
@@ -88,4 +114,6 @@
         document.querySelector('#bob').classList.remove('show');
         document.querySelector('#bart').classList.remove('show');
         document.querySelector('#bert').classList.remove('show');
+        document.querySelector('#sep').classList.remove('show');
+        document.querySelector('#tom').classList.remove('show');
 </script>

@@ -66,6 +66,28 @@ body{
 .bb-background4{
     background-color: #dfcb6e ;
 }
+.b-background5{
+    background-color: #ff75b8;
+    height: 12%;
+    width: 50%;
+}
+.bb-background5{
+    background-color: #ff85c0 ;
+}
+.b-background6{
+    background-color: #89d8ff;
+    height: 12%;
+    width: 50%;
+}
+.bb-background6{
+    background-color: #b9e8ff ;
+}
+
+.btn-quiz{
+    background-color: #89b067;
+    color: white;
+    padding: 3% 15% 3% 15%;
+}
 .portaal-class{
     margin-top: 70%;
     max-width: 200%;
