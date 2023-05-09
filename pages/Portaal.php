@@ -2,11 +2,6 @@
         <!--Hierin staan de afbeeldingen voor het portaal en met behulp van boostrap is het ook responsive-->
   <div class="container">
     <div class="row">
-        <div class="col-12 col-lg-6 d-flex mx-5 justify-content-center align-items-center" style="margin-top: 44vh;">
-        <div class="max-width: 646vh;">
-            <img src="./images/animatie.gif" class="img-fluid">
-        </div>
-        </div>
         <div class="col-12 col-lg-6 mx-5 d-flex justify-content-center">
         <!--Buttons met informatie-->
         <p>

@@ -90,8 +90,7 @@ body{
 }
 .portaal-class{
     margin-top: 70%;
-    max-width: 200%;
-    width: 150%;
+    width: 160%;
     height: 80%;
 }
 .overgang-class{
@@ -99,6 +98,7 @@ body{
     width: 140%;
     height: 200%;
     display: block;
+    margin-bottom: 200%;
 }
 .txt-button{
     font-size: 1vh;
