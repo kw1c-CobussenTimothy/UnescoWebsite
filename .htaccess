@@ -8,6 +8,7 @@
     RewriteRule \.js$ - [L]
     RewriteRule \.gif$ - [L]
     RewriteRule \.jpg$ - [L]
+    RewriteRule \.mp3$ - [L]
 
     RewriteRule ^ index.php [L]
 </IfModule>
