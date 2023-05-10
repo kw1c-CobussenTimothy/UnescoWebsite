@@ -5,10 +5,10 @@
         <div class="col-12 col-lg-6 mx-5 d-flex justify-content-center">
         <!--Buttons met informatie-->
         <p>
-        <h1 class="mt-5" style="position: absolute;" data-toggle="collapse" data-target="#loper">test</h1>
-                <div class="b-background collapse show" style="position: absolute; margin-top: 10%; margin-right: 50%;" id="loper">
+                <img src="images/duurzaamheid_icoon.png" style="position: absolute; margin-top: 25%; margin-left: 45%;" data-toggle="collapse" data-target="#loper">
+                <div class="b-background3 collapse show" style="position: absolute; margin-top: 40%; margin-right: 50%;" id="loper">
                         <h1>Test</h1>
-                        <p class="txt-button bb-background">
+                        <p class="txt-button bb-background3">
                         De loper mag meerdere velden schuin bewegen en slaan. <br> 
                         Hij loopt dus over diagonalen. <br> 
                         Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
@@ -52,54 +52,14 @@
                         </p>                           
                 </div>
         </p>
-        <p>
-        <h1 style="position: absolute; margin-top: 400%;" data-toggle="collapse" data-target="#bert">bart</h1>
-                <div class="b-background4 collapse show" style="position: absolute; margin-top: 405%; margin-right: 50%;" id="bert">
-                        <h1>Test</h1>
-                        <p class="txt-button bb-background4">
-                        De loper mag meerdere velden schuin bewegen en slaan. <br> 
-                        Hij loopt dus over diagonalen. <br> 
-                        Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
-                        hetzelfde geldt voor een loper op een wit veld.
-                        </p>                           
-                </div>
-        </p>
-        <p>
-        <h1 style="position: absolute; margin-top: 480%;" data-toggle="collapse" data-target="#sep">sep</h1>
-                <div class="b-background5 collapse show" style="position: absolute; margin-top: 485%; margin-left: 50%;" id="sep">
-                        <h1>Test</h1>
-                        <p class="txt-button bb-background5">
-                        De loper mag meerdere velden schuin bewegen en slaan. <br> 
-                        Hij loopt dus over diagonalen. <br> 
-                        Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
-                        hetzelfde geldt voor een loper op een wit veld.
-                        </p>                           
-                </div>
-        </p>
-        <p>
-        <h1 style="position: absolute; margin-top: 580%;" data-toggle="collapse" data-target="#tom">tom</h1>
-                <div class="b-background6 collapse show" style="position: absolute; margin-top: 585%; margin-right: 50%;" id="tom">
-                        <h1>Test</h1>
-                        <p class="txt-button bb-background6">
-                        De loper mag meerdere velden schuin bewegen en slaan. <br> 
-                        Hij loopt dus over diagonalen. <br> 
-                        Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
-                        hetzelfde geldt voor een loper op een wit veld.
-                        </p>                           
-                </div>
-        </p>
-        <button style="position: absolute; margin-top: 700%; font-size: 300%;" class="btn btn-quiz" onclick="window.location.href = 'quiz';">Quiz</button>
-
-                <img src="./images/beginlijn.png" class="beginlijn-class img-fluid">            
-        </div>
-        <div class="col-12 col-lg-6 mx-5 d-flex justify-content-center" style="margin-top: 131%;">
+        <button style="position: absolute; margin-top: 400%; font-size: 300%;" class="btn btn-quiz" onclick="window.location.href = 'quiz';">Quiz</button>
                 <img src="./images/heldenlijn.png" class="heldenlijn-class img-fluid">            
         </div>
         <div class="col-12 col-lg-6 mx-5 d-flex justify-content-center" style="margin-top: 131%;">
-                <img src="./images/eindlijn.png" class="heldenlijn-class img-fluid">            
+                <img src="./images/eindlijn.png" class="heldenlijn-class img-fluid">   
         </div>
-        <div class="col-12 col-lg-6 mx-5 d-flex justify-content-center" style="margin-top: 80%;">
-                <img src="./images/karakter_eind_groepspose.png" class="karakters-einde img-fluid">            
+        <div class="col-12 mx-5 d-flex justify-content-center" style="margin-top: 85%;">
+                <img src="./images/karakter_eind_groepspose.png" class="karakters-einde">             
         </div>
   </div>
 </main>
@@ -108,7 +68,4 @@
         document.querySelector('#hallo').classList.remove('show');
         document.querySelector('#bob').classList.remove('show');
         document.querySelector('#bart').classList.remove('show');
-        document.querySelector('#bert').classList.remove('show');
-        document.querySelector('#sep').classList.remove('show');
-        document.querySelector('#tom').classList.remove('show');
 </script>
