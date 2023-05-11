@@ -2,7 +2,7 @@
   <!-- Start pagina, met behulp van de javascript code krijg je het effect dat je door het portaal gaat -->
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-6 d-flex mx-5 justify-content-center align-items-center" style="margin-top: 51vh;">
+      <div class="col-12 col-lg-6 d-flex mx-5 justify-content-center align-items-center" style="margin-top: 52vh;">
         <div class="max-width: 646vh;">
           <img src="./images/animatie.gif" class="img-fluid">
         </div>
@@ -32,12 +32,13 @@
                         hetzelfde geldt voor een loper op een wit veld.
                         </p>                           
                 </div>
-        </p>      
+        </p> 
       </div>
       <div class="col-12 d-flex justify-content-center">
         <div class="col-12" id="image1" onclick="showNextImage()" style="margin-right: 50%; margin-top: 50%;">
-          <img src="images/portaal.png" id="portaal1" class="portaal-class" style="border: none; z-index: 2;">
-        </div>              
+          <img src="images/sterrenveel.gif" id="portaal1" class="veel-sterren" style="position: absolute; margin-left: 30%;">  
+          <img src="images/portaal.png" id="portaal1" class="portaal-class" style="border: none; z-index: 2;">  
+        </div>
         <div class="col-12" id="image2" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; display:none;">
           <img src="images/overgang.png" id="overgang2" class="overgang-class" style="border: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;" onload="imageLoaded()">
         </div>

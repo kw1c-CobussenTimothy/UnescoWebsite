@@ -1,11 +1,17 @@
 <main>
-        <!--Hierin staan de afbeeldingen voor het portaal en met behulp van boostrap is het ook responsive-->
+       
+<!--Hierin staan de afbeeldingen voor het portaal en met behulp van boostrap is het ook responsive-->
   <div class="container">
-    <div class="row">         
+        <img src="images/sterren.gif" style="position: absolute; margin-left: 5%; margin-top: 5%;">
+        <img src="images/sterren.gif" style="position: absolute; margin-left: 30%;">
+        <img src="images/sterren.gif" style="position: absolute; margin-left: 58%;" class="ster-flip">
+        <img src="images/sterren2.gif" style="position: absolute; margin-left: 40%;">
+        <img src="images/sterren2.gif" style="position: absolute;">
+    <div class="row"> 
+              
         <div class="col-12 mx-5 d-flex justify-content-center">
                 <img src="images/portaaluitgang.png" style="position: absolute;" class="img-fluid">
-                <img src="images/sterren.gif" style="position: absolute; margin-right: 30%; margin-bottom: 10%;">
-                <img src="images/sterren.gif" style="position: absolute; margin-right: 50%;">
+                <img src="images/sterren2.gif" style="position: absolute;">
         </div>              
         <div class="col-12 col-lg-6 mx-5 d-flex justify-content-center">
         <!--Buttons met informatie-->

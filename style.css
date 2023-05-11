@@ -104,6 +104,16 @@ body{
 .txt-button{
     font-size: 1vh;
 }
+.ster-flip{
+   transform: scaleX(-1);
+}
+.ster-rotate{
+    transform: rotate(80deg);
+}
+.veel-sterren{
+    width: 70%;
+    height: 70%;
+}
 
 /*#image1 
 {
