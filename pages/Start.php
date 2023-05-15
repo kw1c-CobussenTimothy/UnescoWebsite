@@ -2,7 +2,7 @@
   <!-- Start pagina, met behulp van de javascript code krijg je het effect dat je door het portaal gaat -->
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-6 d-flex mx-5 justify-content-center align-items-center" style="margin-top: 52vh;">
+      <div class="col-12 col-lg-6 d-flex mx-5 justify-content-center align-items-center" style="margin-top: 58vh;">
         <div class="max-width: 646vh;">
           <img src="./images/animatie.gif" class="img-fluid">
         </div>
