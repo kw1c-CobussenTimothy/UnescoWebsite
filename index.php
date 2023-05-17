@@ -33,12 +33,12 @@ session_start();
         <title>UNESCO Guardians</title>
     </head>
     <body>
-        <!-- pages worden zo opgeroepen -->
+        <!-- pages worden zo opgeroepen, $page = de pagina wat je als eerst wilt laten zien-->
         <?php
         $page = Pages::getHeader();
 
         if ($page == "Start" ) {
-            require_once("pages" . $page . ".php");
+            require_once("pages/" . $page . ".php");
         } else {
             $page = empty($page) ? "Start" : $page;
 

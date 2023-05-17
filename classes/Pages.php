@@ -2,6 +2,7 @@
 declare(strict_types=1);
 class Pages 
 {
+    //Leest de naam van de paginas uit
     private static $order = array(0=>2, 1=>1, 2=>0, 3=>3);
     public static function getHeaderPageNames(): array
     {
@@ -13,6 +14,7 @@ class Pages
         }
         return $result;
     }
+    //Leest de file van de paginas uit
     public static function getPagesFileNames() : array
     {
         $result = array();

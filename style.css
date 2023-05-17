@@ -1,6 +1,13 @@
+@font-face {
+    font-family: "neauemontreal";
+    src: url(fonts/neuemontreal/PPNeueMontreal-Bold.otf);
+}
 body{
     background-color: #180035;
     color: white;
+}
+.text-kleur{
+    color: #121212;
 }
 
 .beginlijn-class {
@@ -16,8 +23,137 @@ body{
     display: block; /* Remove any default inline styles */
     margin-left: 8%; /* Center the image horizontally */
 }
+.eindlijn-class{
+    max-width: 300%; /* Set the maximum width of the image */
+    width: 140%; /* Make the image responsive */
+    height: 200%; /* Make the image responsive */
+    display: block; /* Remove any default inline styles */
+    margin-left: 8%; /* Center the image horizontally */
+}
+.karakters-einde{
+    width: 150%;
+}
+.b-background{
+    background-color: #c52929;
+    height: 12%;
+    width: 57%;
+}
+.bb-background{
+    background-color: #e23535;
+}
+.b-background1{
+    background-color: #8f29ca;
+    height: 12%;
+    width: 65%;
+}
+.bb-background1{
+    background-color: #a93ce8;
+}
+.b-background2{
+    background-color: #8f29ca;
+    height: 12%;
+    width: 50%;
+}
+.bb-background2{
+    background-color: #a93ce8 ;
+}
+.b-background3{
+    background-color: #a3e06d;
+    height: 12%;
+    width: 50%;
+}
+.bb-background3{
+    background-color: #c2f496 ;
+}
+.b-background4{
+    background-color: #fbde5f;
+    height: 12%;
+    width: 50%;
+}
+.bb-background4{
+    background-color: #dfcb6e ;
+}
+.b-background5{
+    background-color: #ff75b8;
+    height: 12%;
+    width: 50%;
+}
+.bb-background5{
+    background-color: #ff85c0 ;
+}
+.b-background6{
+    background-color: #89d8ff;
+    height: 12%;
+    width: 50%;
+}
+.bb-background6{
+    background-color: #b9e8ff ;
+}
 
-#image1 
+.btn-quiz{
+    background-color: #89b067;
+    color: white;
+    padding: 3% 15% 3% 15%;
+}
+.portaal-class{
+    border: none;
+    z-index: 2;
+    width: 175%;
+    height: 125%;
+}
+.overgang-class{
+    max-width: 300%;
+    width: 140%;
+    height: 200%;
+    display: block;
+    margin-bottom: 200%;
+}
+.txt-button{
+    font-size: 1vh;
+}
+.ster-flip{
+   transform: scaleX(-1);
+}
+.ster-rotate{
+    transform: rotate(80deg);
+}
+.veel-sterren{
+    width: 70%;
+    height: 70%;
+}
+.heartbeat-img {
+    animation-name: heartbeat;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .moving-text {
+    position: relative;
+    font-family: "neauemontreal", sans-serif;
+    font-size: 60px;
+    color: #fff;
+    animation: moveText 4s linear infinite;
+  }
+  
+  @keyframes moveText {
+    0% { left: 0; }
+    50% { left: 15%; }
+    100% { left: 0; }
+  }
+
+/*#image1 
 {
     background: transparent;
     border: 3px solid white;
@@ -89,4 +225,13 @@ body{
     margin-left: 0;
     width: 200px;
     float: left;
-}
+}*/
+.overgang-class {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* set z-index higher than other elements */
+  }
+  
