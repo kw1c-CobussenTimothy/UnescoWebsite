@@ -19,11 +19,10 @@
                 <img src="images/duurzaamheid_icoon.png" class="heartbeat-img" style="position: absolute; margin-top: 40%; margin-left: 45%;" data-toggle="collapse" data-target="#duurzaam">
                 <div class="b-background3 collapse show" style="position: absolute; margin-top: 55%; margin-right: 50%;" id="duurzaam">
                         <h1>Duurzaamheid</h1>
-                        <p class="txt-button bb-background3">
-                        De loper mag meerdere velden schuin bewegen en slaan. <br> 
-                        Hij loopt dus over diagonalen. <br> 
-                        Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
-                        hetzelfde geldt voor een loper op een wit veld.
+                        <p class="txt-button bb-background3" style="font-size: 28px;">
+                        Duurzaamheid is van belang voor de toekomst van onze planeet en de mensheid. <br>
+                        Hoe ziet jouw wereld eruit over 25 jaar? <br>
+                        Zijn er dan nog olifanten? Reizen we nog in vliegtuigen?
                         </p>                           
                 </div>
         </p>
@@ -31,11 +30,11 @@
                 <img src="images/vrede_en_mensenrechten_icoon.png" class="heartbeat-img" style="position: absolute; margin-top: 95%; margin-left: 45%;" data-toggle="collapse" data-target="#vrede">
                 <div class="b-background4 collapse show" style="position: absolute; margin-top: 110%; margin-left: 55%;" id="vrede">
                         <h1>Vrede en mensenrechten</h1>
-                        <p class="txt-button bb-background4">
-                        De loper mag meerdere velden schuin bewegen en slaan. <br> 
-                        Hij loopt dus over diagonalen. <br> 
-                        Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
-                        hetzelfde geldt voor een loper op een wit veld.
+                        <p class="txt-button bb-background4" style="font-size: 28px;">
+                        Mensenrechten gelden voor iedereen, ongeacht waar je geboren bent of wie je bent. <br> 
+                        Vrede is afwezigheid van geweld en oorlog. <br> 
+                        Hoe kunnen we zorgen dat mensenrechten beschermd worden? <br> 
+                        Is het mogelijk om wereldvrede te bereiken? En wat is jouw rol daarin?
                         </p>                           
                 </div>
         </p>
@@ -43,23 +42,22 @@
                 <img src="images/intercultureel_leren.png"class="heartbeat-img" style="position: absolute; margin-top: 165%; margin-left: 45%;" data-toggle="collapse" data-target="#cultuur">
                 <div class="b-background5 collapse show" style="position: absolute; margin-top: 180%; margin-right: 50%;" id="cultuur">
                         <h1>Intercultureel</h1>
-                        <p class="txt-button bb-background5">
-                        De loper mag meerdere velden schuin bewegen en slaan. <br> 
-                        Hij loopt dus over diagonalen. <br> 
-                        Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
-                        hetzelfde geldt voor een loper op een wit veld.
+                        <p class="txt-button bb-background5" style="font-size: 28px;">
+                        Intercultureel leren betekent het ontwikkelen van kennis over andere culturen en andere manieren van leven. <br>
+                        Als je openstaat voor andere culturen gaat er een wereld voor je open. <br> 
+                        Wat wil jij leren van andere culturen?
                         </p>                           
                 </div>
         </p>
         <p>
                 <img src="images/wereldburgerschap_icoon.png" class="heartbeat-img" style="position: absolute; margin-top: 270%; margin-left: 45%;" data-toggle="collapse" data-target="#wereld">
                 <div class="b-background6 collapse show" style="position: absolute; margin-top: 285%; margin-left: 50%;" id="wereld">
-                        <h1>Test</h1>
-                        <p class="txt-button bb-background6">
-                        De loper mag meerdere velden schuin bewegen en slaan. <br> 
-                        Hij loopt dus over diagonalen. <br> 
-                        Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
-                        hetzelfde geldt voor een loper op een wit veld.
+                        <h1>Wereldburgerschap</h1>
+                        <p class="txt-button bb-background6" style="font-size: 28px;">
+                        Als wereldburgers zijn we samen verantwoordelijk voor elkaar en de wereld. <br>
+                        We gaan voor een betere wereld. <br>
+                        Hoe werk je samen met mensen die anders denken dan jij? <br>
+                        Hoe maak jij de wereld een stukje beter?
                         </p>                           
                 </div>
         </p>
