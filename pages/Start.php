@@ -10,26 +10,26 @@
       <div class="col-12 col-lg-6 mx-5 d-flex justify-content-center">
         <img src="./images/beginlijn.png" class="beginlijn-class img-fluid"> 
         <p>
-          <h1 style="position: absolute; margin-top: 60%;" data-toggle="collapse" data-target="#unesco">Unesco</h1>
+          <h1 class="moving-text" style="position: absolute; margin-top: 60%; margin-left: 30%;" data-toggle="collapse" data-target="#unesco">Wat is Unesco?</h1>
                 <div class="b-background collapse show" style="position: absolute; margin-top: 65%; margin-right: 50%;" id="unesco">
-                        <h1>Test</h1>
-                        <p class="txt-button bb-background">
-                        De loper mag meerdere velden schuin bewegen en slaan. <br> 
-                        Hij loopt dus over diagonalen. <br> 
-                        Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
-                        hetzelfde geldt voor een loper op een wit veld.
+                        <h1>Unesco-scholennetwerk</h1>
+                        <p class="txt-button bb-background" style="font-size: 35px;">
+                        ‘Since wars begin in the minds of men, it is in the minds of men that the defences of peace must be constructed’. <br>
+                         Deze gedachte vormt de essentie van de missie van Unesco. <br> 
+                         Unesco-scholen ondersteunen deze missie: ze maken hun leerlingen vertrouwd met het Unesco-gedachtegoed en dragen <br>
+                         zo hun steentje bij aan vrede en verdraagzaamheid.
                         </p>                           
                 </div>
         </p>
+          <img src="images/vliegtuigkw1c.gif" style="position: absolute; margin-top: 140%;" data-toggle="collapse" data-target="#kw1c">
         <p>
-          <h1 style="position: absolute; margin-top: 200%;" data-toggle="collapse" data-target="#kw1c">Kw1c</h1>
                 <div class="b-background1 collapse show" style="position: absolute; margin-top: 205%; margin-left: 50%;" id="kw1c">
-                        <h1>Test</h1>
-                        <p class="txt-button bb-background1">
-                        De loper mag meerdere velden schuin bewegen en slaan. <br> 
-                        Hij loopt dus over diagonalen. <br> 
-                        Een loper die op een zwart veld staat zal dus altijd op een zwart veld blijven, <br>
-                        hetzelfde geldt voor een loper op een wit veld.
+                        <h1>KW1C UNESCO SCHOOL</h1>
+                        <p class="txt-button bb-background1" style="font-size: 35px;">
+                        Het Koning Willem I College is als Unesco-school deel van een wereldwijd netwerk met meer dan 9700 scholen. <br>
+                        In Nederland zijn 75 scholen aangesloten waarvan ongeveer 10 mbo’s. <br>
+                        Wij vinden het als school belangrijk te streven naar een betere wereld. <br>
+                        Met behulp van deze app ga je ontdekken hoe jij als student je steentje bij kunt dragen.
                         </p>                           
                 </div>
         </p> 
@@ -80,5 +80,6 @@
       function imageLoaded() {
         imageLoadedFlag = true;
       }
+      
   </script>
 </main>

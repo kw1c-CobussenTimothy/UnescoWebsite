@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "neauemontreal";
+    src: url(fonts/neuemontreal/PPNeueMontreal-Bold.otf);
+}
 body{
     background-color: #180035;
     color: white;
@@ -32,7 +36,7 @@ body{
 .b-background{
     background-color: #c52929;
     height: 12%;
-    width: 50%;
+    width: 57%;
 }
 .bb-background{
     background-color: #e23535;
@@ -40,7 +44,7 @@ body{
 .b-background1{
     background-color: #8f29ca;
     height: 12%;
-    width: 50%;
+    width: 65%;
 }
 .bb-background1{
     background-color: #a93ce8;
@@ -134,6 +138,19 @@ body{
     100% {
       transform: scale(1);
     }
+  }
+  .moving-text {
+    position: relative;
+    font-family: "neauemontreal", sans-serif;
+    font-size: 60px;
+    color: #fff;
+    animation: moveText 4s linear infinite;
+  }
+  
+  @keyframes moveText {
+    0% { left: 0; }
+    50% { left: 15%; }
+    100% { left: 0; }
   }
 
 /*#image1 
