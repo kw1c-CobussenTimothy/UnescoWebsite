@@ -1,83 +1,83 @@
 <?php
 // Define the questions and their corresponding points for each category
 $categories = [
-    '1' => [
+    'Raeve' => [
         [
-            'question' => 'Hoe vaak ga je naar een kringloopwinkel per jaar?',
+            'question' => 'Hoe vaak per jaar koop jij iets in een kringloopwinkel?',
             'options' => [
-                '0 keer' => 10,
-                '1-3 keer' => 5,
-                '4-8 keer' => 3,
-                '9+ keer' => 1
+                '0 keer' => 0,
+                '1-3 keer' => 1,
+                '4-8 keer' => 2,
+                '9+ keer' => 3
             ],
         ],
         [
-            'question' => 'Hoe vaak per maand koop je iets online?',
+            'question' => 'Hoe vaak per maand shop je online?',
             'options' => [
-                '0 keer' => 10,
-                '1-2 keer' => 5,
-                '3-4 keer' => 3,
-                '5+ keer' => 1
-            ],
-        ],
-    ],
-    '2' => [
-        [
-            'question' => 'Vind je dat iedereen dezelfde rechten moet krijgen?',
-            'options' => [
-                'Zeker!' => 10,
-                'Ja, maar ze moeten wel hun best ervoor doen' => 5,
-                'Nee, maar sommige mensen wel' => 3,
-                'Nee, natuurlijk niet' => 1
-            ],
-        ],
-        [
-            'question' => 'Wat doe je met eten wat je te veel hebt gemaakt?',
-            'options' => [
-                'Ik gooi het in de afvalbak' => 10,
-                'Ik gooi het in de groenbak' => 5,
-                'Ik vries het in voor later' => 3,
-                'Ik geef het weg aan een ander' => 1
+                '0 keer' => 3,
+                '1-2 keer' => 2,
+                '3-4 keer' => 1,
+                '5+ keer' => 0
             ],
         ],
     ],
-    '3' => [
+    'Tianat' => [
         [
-            'question' => 'Hoeveel ben jij bezig met andere culturen?',
+            'question' => 'Vind je dat iedereen dezelfde rechten moet hebben?',
             'options' => [
-                'Helemaal niet' => 10,
-                'Wel een beetje' => 5,
-                'Ik weet best veel' => 3,
-                'Ik houd me er veel mee bezig' => 1
+                'Zeker!' => 3,
+                'Ja, maar ze moeten er wel hun best voor doen.' => 2,
+                'Nee, maar sommige mensen wel.' => 1,
+                'Nee, natuurlijk niet.' => 0
             ],
         ],
         [
-            'question' => 'Ik maak makkelijk nieuwe vrienden',
+            'question' => 'Wat doe je wanneer je gekookt hebt en er eten overblijft?',
             'options' => [
-                'Nee bedankt' => 10,
-                'Nee, maar ik zou het wel willen' => 5,
-                'Denk het wel' => 3,
-                'Zekers!' => 1
+                'Boeie, ik gooi het in de afvalbak.' => 0,
+                'Dat hoort in de groenbak.' => 1,
+                'Freezzzz.' => 2,
+                'Ik geef het weg aan een ander.' => 3
             ],
         ],
     ],
-    '4' => [
+    'Bohr' => [
+        [
+            'question' => 'Ben je into andere culturen?',
+            'options' => [
+                'Nah!' => 0,
+                'Mwah!' => 1,
+                'Duh!' => 2,
+                'Yessir!!' => 3
+            ],
+        ],
+        [
+            'question' => 'Ik maak makkelijk nieuwe vrienden.',
+            'options' => [
+                'Niet mijn ding.' => 0,
+                'Nee, maar ik zou het wel willen.' => 1,
+                'Denk het wel.' => 2,
+                'Zekers!' => 3
+            ],
+        ],
+    ],
+    'Limey' => [
         [
             'question' => 'Stel je voor, iemand verrast je',
             'options' => [
-                'Daar houd ik helemaal niet van' => 10,
-                'Uhm... oke bedankt?' => 5,
-                'Oh dankje!' => 3,
-                'Dat vind ik geweldig' => 1
+                'Daar houd ik helemaal niet van' => 0,
+                'Uhm... oke bedankt?' => 1,
+                'Oh dankje!' => 2,
+                'Daar mag je me voor wakker maken.' => 3
             ],
         ],
         [
-            'question' => 'Wat zou jij doen als je te weten krijgt dat een docent een student die hij/zij minder aardig vindt, een lager punt geeft dan anderen zonder reden?',
+            'question' => 'Wat zou jij doen wanneer een klasgenoot zonder goede reden een slechte beoordeling krijgt?',
             'options' => [
-                'Ik zou het stom vinden maar er niks aan doen' => 10,
-                'Ik zou naar de docent toegaan en het bespreken' => 5,
-                'Ik zou het melden bij de directie of andere docenten' => 3,
-                'Het zou mij niet boeien, ik ben gelukkig niet die student' => 1
+                'Jammer, maar niet mijn probleem.' => 0,
+                'Ik spreek de docent erop aan.' => 3,
+                'Ik zou het bespreken met andere docenten.' => 2,
+                'Ik ben blij dat ik het niet ben.' => 1
             ],
         ],
     ]
