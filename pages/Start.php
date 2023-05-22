@@ -10,7 +10,8 @@
       <div class="col-12 col-lg-6 mx-5 d-flex justify-content-center">
         <img src="./images/beginlijn.png" class="beginlijn-class img-fluid"> 
         <p>
-          <h1 class="moving-text" style="position: absolute; margin-top: 60%; margin-left: 30%;" data-toggle="collapse" data-target="#unesco">Wat is Unesco?</h1>
+            <div id="text1" style="position: absolute; margin-top: 60%;" data-toggle="collapse" data-target="#unesco">What the</div>
+            <div style="position: absolute; margin-top:65%;" id="text2" data-toggle="collapse" data-target="#unesco"> Unesco?!</div>
                 <div class="b-background collapse show" style="position: absolute; margin-top: 65%; margin-right: 50%;" id="unesco">
                         <h1>Unesco-scholennetwerk</h1>
                         <p class="txt-button bb-background" style="font-size: 35px;">
@@ -80,6 +81,39 @@
       function imageLoaded() {
         imageLoadedFlag = true;
       }
+      function animateText() {
+  const text1 = document.getElementById("text1");
+  const text2 = document.getElementById("text2");
+
+  // Show "What the" text slowly
+  text1.style.animationName = "fadeInSlow";
+  text1.style.animationDuration = "5s";
+  text1.style.animationDelay = "0s";
+  text1.style.opacity = "1";
+
+  // After the first text is fully displayed, show "Unesco" text faster
+  setTimeout(function() {
+    text2.style.animationName = "fadeInFast";
+    text2.style.animationDuration = "1s";
+    text2.style.animationDelay = "0s";
+    text2.style.opacity = "1";
+  }, 5000);
+
+  // Reset animations and repeat
+  setTimeout(function() {
+    text1.style.animationName = "";
+    text1.style.opacity = "0";
+
+    text2.style.animationName = "stayVisible";
+    text2.style.animationDuration = "infinite";
+    text2.style.animationDelay = "0s";
+
+    animateText(); // Repeat the animation
+  }, 7000);
+}
+
+animateText(); // Start the animation
+
       
   </script>
 </main>
