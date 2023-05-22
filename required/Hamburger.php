@@ -1,57 +1,56 @@
-<div class="dropdown">
-  <button class="dropbtn" onclick="showDropdown()"> &#8801; </button>
-  <div class="dropdown-content" id="myDropdown">
-    <?php
-        $miau = ["1", "2", "3", "4"];
+<div id="NavBar" class="sidenav">
+					<a href="javascript:void(0)" id="closebutton" onclick="Close()">&times;</a>
+					<a href="/UnescoWebsite/index">Hoofdpagina</a>
+					<a href="/UnescoWebsite/pages/Quiz">Quiz</a>
+					<a href="https://sdgs.un.org/goals" target="_blank">Unesco klimaatdoelen</a>
+					<a href="/UnescoWebsite/pages/About">Over ons</a>
+				</div>
+<span style="font-size: 30px;cursor:pointer;" id="Container" onclick="Open()">&#9776;</span>
 
-        foreach($miau as $mlem) {
-            echo '<a href="#">'. $mlem .'</a>';
-        }?>
-    <a href="#">Item 1</a>
-    <a href="#">Item 2</a>
-    <a href="#">Item 3</a>
-  </div>
-</div>
-
-<style>
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    width: 30vw;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-  }
-
-  .dropdown-content a {
-    display: block;
-  }
-
-  .show {
-    display: block;
-  }
-</style>
 
 <script>
-  function showDropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function Open()
+  {
+    document.getElementById("NavBar").style.width = "45%";
   }
 
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      for (var i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
+  // gives the sidebar a width of 0, thus removing it from view
+  function Close()
+  {
+    document.getElementById("NavBar").style.width = "0%";
   }
 </script>
 
+<style>
 
+.sidenav
+{
+	height: 100%;
+	width: 0%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #000000;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	z-index: 1;
+}
+
+.sidenav a
+{
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	display: block;
+	transition: 0.3s;
+	font-size: 17px;
+}
+
+.sidenav #closebutton
+{
+	position: absolute;
+	top: 40px;
+	right: 25px;
+	margin-right: 0;
+}
+</style>
