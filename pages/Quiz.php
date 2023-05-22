@@ -1,38 +1,89 @@
 <?php
 // Define the questions and their corresponding points for each category
 $categories = [
-    'Sports' => [
+    '1' => [
         [
-            'question' => 'Which country won the FIFA World Cup in 2018?',
-            'options' => ['France', 'Brazil', 'Germany', 'Argentina'],
-            'correct' => 'France',
-            'points' => 10
+            'question' => 'Hoe vaak ga je naar een kringloopwinkel per jaar?',
+            'options' => [
+                '0 keer' => 10,
+                '1-3 keer' => 5,
+                '4-8 keer' => 3,
+                '9+ keer' => 1
+            ],
         ],
         [
-            'question' => 'Which sport is associated with Wimbledon?',
-            'options' => ['Tennis', 'Cricket', 'Football', 'Basketball'],
-            'correct' => 'Tennis',
-            'points' => 10
-        ]
+            'question' => 'Hoe vaak per maand koop je iets online?',
+            'options' => [
+                '0 keer' => 10,
+                '1-2 keer' => 5,
+                '3-4 keer' => 3,
+                '5+ keer' => 1
+            ],
+        ],
     ],
-    'Geography' => [
+    '2' => [
         [
-            'question' => 'What is the capital city of Australia?',
-            'options' => ['Sydney', 'Melbourne', 'Canberra', 'Brisbane'],
-            'correct' => 'Canberra',
-            'points' => 10
+            'question' => 'Vind je dat iedereen dezelfde rechten moet krijgen?',
+            'options' => [
+                'Zeker!' => 10,
+                'Ja, maar ze moeten wel hun best ervoor doen' => 5,
+                'Nee, maar sommige mensen wel' => 3,
+                'Nee, natuurlijk niet' => 1
+            ],
         ],
         [
-            'question' => 'Which country is home to the Great Barrier Reef?',
-            'options' => ['Australia', 'Brazil', 'Mexico', 'India'],
-            'correct' => 'Australia',
-            'points' => 10
-        ]
+            'question' => 'Wat doe je met eten wat je te veel hebt gemaakt?',
+            'options' => [
+                'Ik gooi het in de afvalbak' => 10,
+                'Ik gooi het in de groenbak' => 5,
+                'Ik vries het in voor later' => 3,
+                'Ik geef het weg aan een ander' => 1
+            ],
+        ],
+    ],
+    '3' => [
+        [
+            'question' => 'Hoeveel ben jij bezig met andere culturen?',
+            'options' => [
+                'Helemaal niet' => 10,
+                'Wel een beetje' => 5,
+                'Ik weet best veel' => 3,
+                'Ik houd me er veel mee bezig' => 1
+            ],
+        ],
+        [
+            'question' => 'Ik maak makkelijk nieuwe vrienden',
+            'options' => [
+                'Nee bedankt' => 10,
+                'Nee, maar ik zou het wel willen' => 5,
+                'Denk het wel' => 3,
+                'Zekers!' => 1
+            ],
+        ],
+    ],
+    '4' => [
+        [
+            'question' => 'Stel je voor, iemand verrast je',
+            'options' => [
+                'Daar houd ik helemaal niet van' => 10,
+                'Uhm... oke bedankt?' => 5,
+                'Oh dankje!' => 3,
+                'Dat vind ik geweldig' => 1
+            ],
+        ],
+        [
+            'question' => 'Wat zou jij doen als je te weten krijgt dat een docent een student die hij/zij minder aardig vindt, een lager punt geeft dan anderen zonder reden?',
+            'options' => [
+                'Ik zou het stom vinden maar er niks aan doen' => 10,
+                'Ik zou naar de docent toegaan en het bespreken' => 5,
+                'Ik zou het melden bij de directie of andere docenten' => 3,
+                'Het zou mij niet boeien, ik ben gelukkig niet die student' => 1
+            ],
+        ],
     ]
     // Add more categories and questions here...
 ];
 
-// Initialize the quiz session if it hasn't been started
 if (!isset($_SESSION['quizStarted'])) {
     $_SESSION['quizStarted'] = true;
     $_SESSION['categoryPoints'] = array_fill_keys(array_keys($categories), 0);
@@ -51,17 +102,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !$quizEnded) {
     // Get the selected answer for the current question
     $selectedAnswer = $_POST['answer'];
 
-    // Get the current category, question, and the correct answer
+    // Get the current category, question, and the options
     $category = array_keys($categories)[$categoryIndex];
     $question = $categories[$category][$questionIndex]['question'];
-    $correctAnswer = $categories[$category][$questionIndex]['correct'];
-    $points = $categories[$category][$questionIndex]['points'];
+    $options = $categories[$category][$questionIndex]['options'];
 
-    // Check if the selected answer is correct
-    if ($selectedAnswer === $correctAnswer) {
-        $_SESSION['categoryPoints'][$category] += $points; // Increase category points for each correct answer
-        $_SESSION['totalPoints'] += $points; // Increase total points for each correct answer
-    }
+    // Get the points for the selected option
+    $points = $options[$selectedAnswer];
+
+    // Update the category points and total points
+    $_SESSION['categoryPoints'][$category] += $points;
+    $_SESSION['totalPoints'] += $points;
 
     // Redirect to the next question or show the result if there are no more questions
     if ($questionIndex + 1 < count($categories[$category])) {
@@ -82,16 +133,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !$quizEnded) {
 // Retrieve the category points from the session
 $categoryPoints = $_SESSION['categoryPoints'];
 $totalPoints = $_SESSION['totalPoints'];
+print_r($categoryPoints);
 
 // Find the category with the highest points
 $highestPoints = max($categoryPoints);
 $winningCategory = array_search($highestPoints, $categoryPoints);
 
-var_dump($categoryPoints)   ;
-var_dump($winningCategory);
-////if welke cateorie de meeste punten eeft
-//
-//
 $_SESSION["held"] = $winningCategory;
 ?>
 
@@ -102,7 +149,7 @@ $_SESSION["held"] = $winningCategory;
     <title>Quiz System</title>
 </head>
 <body>
-<?php if ($quizEnded): ?>
+<?php if ($quizEnded): header("Location: WinningHeld"); ?>
     <h3>Quiz Ended</h3>
     <h4>Category Points:</h4>
     <ul>
@@ -124,7 +171,7 @@ $_SESSION["held"] = $winningCategory;
         echo "<p>$question</p>";
 
         // Generate radio buttons for the question options
-        foreach ($options as $option) {
+        foreach ($options as $option => $points) {
             echo "<input type='radio' name='answer' value='$option'> $option<br>";
         }
         ?>
