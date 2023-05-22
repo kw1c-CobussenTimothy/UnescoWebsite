@@ -153,7 +153,7 @@ body{
     100% { left: 0; }
   }
 
-/*#image1 
+.image1 
 {
     background: transparent;
     border: 3px solid white;
@@ -161,12 +161,11 @@ body{
     display: block;
     margin: 0.5em auto;
     margin-right: 1px;
-    margin-left: 135px;
-    width: 200px;
+    width: 75%;
     float: left;
 }
-
-#image2
+/*
+.image2
 {
     background: transparent;
     border: 3px solid white;
@@ -178,7 +177,7 @@ body{
     width: 200px;
     float: left;
 }
-#image3
+.image3
 {
     background: transparent;
     border: 3px solid white;
@@ -190,7 +189,7 @@ body{
     width: 200px;
     float: left;
 }
-#image4
+.image4
 {
     background: transparent;
     border: 3px solid white;
@@ -202,7 +201,7 @@ body{
     width: 200px;
     float: left;
 }
-#image5
+.image5
 {
     background: transparent;
     border: 3px solid white;
@@ -214,7 +213,7 @@ body{
     width: 200px;
     float: left;
 }
-#image6
+.image6
 {
     background: transparent;
     border: 3px solid white;
@@ -225,7 +224,8 @@ body{
     margin-left: 0;
     width: 200px;
     float: left;
-}*/
+}
+*/
 .overgang-class {
     position: absolute;
     top: 0;
