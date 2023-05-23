@@ -44,6 +44,7 @@ session_start();
 
             require_once("pages/" . $page . ".php");
         }
+        
         ?>
     </body>
 
