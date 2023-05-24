@@ -61,7 +61,7 @@
                         </p>                           
                 </div>
         </p>
-                <button style="position: absolute; margin-top: 400%; font-size: 300%;" class="btn btn-quiz" onclick="window.location.href = 'quiz';">Quiz</button>
+                <button style="position: absolute; margin-top: 400%; font-size: 300%;" class="btn btn-quiz" onclick="window.location.href = 'quiz';">Ontdek je Innerlijke Held</button>
                 <img src="./images/heldenlijn.png" class="heldenlijn-class img-fluid" style="margin-top: 4%;">            
         </div>
         <div class="col-12 col-lg-6 mx-5 d-flex justify-content-center" style="margin-top: 131%;">
