@@ -250,7 +250,7 @@ body{
   }
   
   .banner {
-    width: 100%;
+    width: 130%;
     height: 35%;
   }
 
@@ -270,14 +270,9 @@ body{
     font-size: 70px;
   }
 
-  .schild{
-    width: 40%;
-    height: 20%;
-  }
-
   .raeve{
     height: 80%;
-    width: 70%;
+    width: 75%;
   }
 
   @property --rotate {
@@ -287,8 +282,8 @@ body{
   }
   
   :root {
-    --card-height: 50vh;
-    --card-width: calc(var(--card-height) / 2.4);
+    --card-height: 63vh;
+    --card-width: calc(var(--card-height) / 2.5);
   }
 
   .card {
