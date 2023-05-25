@@ -4,10 +4,10 @@
     <div class="row">
       <div class="col-12 col-lg-6 d-flex mx-5 justify-content-center align-items-center position-absolute">
         <div class="max-width: 646vh;">
-          <img src="./images/arrow.gif" class="img-fluid" style="width: 60%; height: 60%; margin-top: 480%; position: static;">          
+          <img src="./images/arrow.gif" class="img-fluid" style="width: 60%; height: 60%; margin-top: 485%; position: static;">          
         </div>
       </div>  
-      <div class="col-12 col-lg-6 d-flex mx-5 justify-content-center align-items-center" style="margin-top: 54vh;">
+      <div class="col-12 col-lg-6 d-flex mx-5 justify-content-center align-items-center" style="margin-top: 58vh;">
         <div class="max-width: 646vh;">
 
           <img src="./images/animatie.gif" class="img-fluid">          
@@ -43,10 +43,10 @@
       </div>
     </div>      
   </div>
-    <div class="col-12">
+    <div class="col-6" >
         <a href="portaal" id="image1">
-          <img src="images/portaal.png" id="portaal1" class=" portaal-class" style="position:absolute; margin-top: 40%; margin-right: 150%;">
-          <img src="images/sterrenveel.gif" id="portaal1" class="veel-sterren" style="position: absolute; margin-left: 20%; margin-top: 50%;"> 
+          <img src="images/portaal.png" id="portaal1" class=" portaal-class" style="position:absolute; margin-top: 40%;">
+          <img src="images/sterrenveel.gif" id="portaal1" class="veel-sterren" style="position: absolute; margin-left: 30%; margin-top: 20%;"> 
         </a>
       </div>
   <script>
