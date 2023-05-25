@@ -251,7 +251,6 @@ body{
   
   .banner {
     width: 130%;
-    height: 35%;
   }
 
   .rotate {
@@ -270,11 +269,6 @@ body{
     font-size: 70px;
   }
 
-  .raeve{
-    height: 80%;
-    width: 80%;
-  }
-
   @property --rotate {
     syntax: "<angle>";
     initial-value: 132deg;
@@ -282,7 +276,7 @@ body{
   }
   
   :root {
-    --card-height: 63vh;
+    --card-height: 75vh;
     --card-width: calc(var(--card-height) / 2.5);
   }
 
@@ -393,7 +387,7 @@ input[type="radio"]:checked + .button {
     }
   }
 
-  /* Het navigatie menu zelf
+  /* Het navigatie menu zelf */
 .sidenav
 {
     height: 100%;
@@ -408,27 +402,27 @@ input[type="radio"]:checked + .button {
     z-index: 1;
 }
 /* De text binnen het navigatiemenu */
-/* .sidenav a
+.sidenav a
 {
-    padding: 8px 8px 8px 32px;
+    padding: 10px 8px 8px 32px;
     text-decoration: none;
     display: block;
     transition: 0.25s;
-    font-size: 21px;
+    font-size: 40px;
     color: #ffffff;
-} */
+}
 
 /* De knop om het menu te sluiten */
-/* .sidenav #closebutton
+.sidenav #closebutton
 {
     position: absolute;
     top: 40px;
     right: 25px;
     margin-right: 0;
-    font-size: 40px;
-} */
+    font-size: 80px;
+} 
 
-/* .image2
+.image2
 {
     margin-left: auto;
     margin-right: auto;
@@ -437,4 +431,15 @@ input[type="radio"]:checked + .button {
     background: transparent;
     display: block;
     width: 100%;
-} */
+}
+
+.helden-link-pagina{
+  color: white;
+  font-size: 60px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+a:visited{
+  color: white;
+}
