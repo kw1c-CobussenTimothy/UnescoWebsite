@@ -386,6 +386,202 @@ input[type="radio"]:checked + .button {
       --rotate: 360deg;
     }
   }
+/*Bovenste is voor Raeve card*/
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 75vh;
+  --card-width: calc(var(--card-height) / 2.5);
+}
+
+.card1 {
+  background-color: transparent;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  border-radius: 6px;
+  display: flex;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.card1::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    ,#dcb54191 ,  #f0b810be 43%, orange);
+    position: absolute;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card1::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(2);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , yellow,#f8c210 43%, orange );
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+/*Bovenste is voor Tianat card*/
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 75vh;
+  --card-width: calc(var(--card-height) / 2.5);
+}
+
+.card2 {
+  background-color: transparent;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  border-radius: 6px;
+  display: flex;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.card2::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    ,#ffbfc3 ,  #ff8991 43%, #ff535e);
+    position: absolute;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card2::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(2);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #ffbfc3,#ff8991 43%, #ff535e );
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+/*Bovenste is voor Rob card */
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 75vh;
+  --card-width: calc(var(--card-height) / 2.5);
+}
+
+.card3 {
+  background-color: transparent;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  border-radius: 6px;
+  display: flex;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.card3::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    ,#ffbfc3 ,  #ff8991 43%, #ff535e);
+    position: absolute;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card3::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(2);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #ffbfc3,#ff8991 43%, #ff535e );
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+/*Bovenste is voor Emily card */
+
 
   /* Het navigatie menu zelf */
 .sidenav
