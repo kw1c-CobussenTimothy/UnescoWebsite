@@ -101,8 +101,8 @@ body{
     padding: 3% 2% 3% 2%;
 }
 .portaal-class{
-    border: none;
-    width: 200%;
+  width: 110%;
+  height: 80%;
 }
 .overgang-class{
     max-width: 300%;
