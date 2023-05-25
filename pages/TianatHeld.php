@@ -8,7 +8,7 @@
             </div>
             <div class="col-4">
                 <img style="margin-left: 105%;" class="banner" src="./images/banneroranje.png">
-                <div class="card" style="position: absolute; margin-left: 20%; margin-top: 40%;">
+                <div class="card1" style="position: absolute; margin-left: 20%; margin-top: 40%;">
                     test test test
                 </div> 
             </div>

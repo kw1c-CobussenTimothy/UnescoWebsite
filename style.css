@@ -373,7 +373,6 @@ input[type="radio"]:checked + .button {
 
 
 .image-wrapper {
-    position: relative;
     overflow: hidden;
     height: 100vh; /* Adjust the height as needed */
 }
@@ -546,7 +545,7 @@ input[type="radio"]:checked + .button {
   border-radius: 8px;
   background-image: linear-gradient(
     var(--rotate)
-    ,#ffbfc3 ,  #ff8991 43%, #ff535e);
+    ,#ade1fe ,  #b6c6fe 43%, #4cb9f3);
     position: absolute;
     top: -1%;
     left: -2%;
@@ -565,7 +564,7 @@ input[type="radio"]:checked + .button {
   filter: blur(calc(var(--card-height) / 6));
   background-image: linear-gradient(
     var(--rotate)
-    , #ffbfc3,#ff8991 43%, #ff535e );
+    , #b6c6fe,#2cca709f ,#ade1fe 43%, #4cb9f3 );
     opacity: 1;
   transition: opacity .5s;
   animation: spin 2.5s linear infinite;
