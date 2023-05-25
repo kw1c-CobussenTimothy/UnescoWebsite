@@ -36,6 +36,7 @@ session_start();
         <!-- pages worden zo opgeroepen, $page = de pagina wat je als eerst wilt laten zien-->
         <?php
         $page = Pages::getHeader();
+        require_once("required/Hamburger.php");
 
         if ($page == "Start" ) {
             require_once("pages/" . $page . ".php");
