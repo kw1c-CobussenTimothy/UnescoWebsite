@@ -45,7 +45,7 @@
   </div>
     <div class="col-12">
         <a href="portaal" id="image1">
-          <img src="images/portaal.png" id="portaal1" class=" portaal-class" style="position:absolute; margin-top: 60%; margin-right: 150%;">
+          <img src="images/portaal.png" id="portaal1" class=" portaal-class" style="position:absolute; margin-top: 40%; margin-right: 150%;">
           <img src="images/sterrenveel.gif" id="portaal1" class="veel-sterren" style="position: absolute; margin-left: 20%; margin-top: 50%;"> 
         </a>
       </div>
