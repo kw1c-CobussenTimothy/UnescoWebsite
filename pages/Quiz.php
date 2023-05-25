@@ -1,7 +1,7 @@
 <?php
 // Define the questions and their corresponding points for each category
 $categories = [
-    'Raeve' => [
+    'RaeveHeld' => [
         [
             'question' => 'Hoe vaak per jaar koop jij iets in een kringloopwinkel?',
             'options' => [
@@ -21,7 +21,7 @@ $categories = [
             ],
         ],
     ],
-    'Tianat' => [
+    'TianatHeld' => [
         [
             'question' => 'Vind je dat iedereen dezelfde rechten moet hebben?',
             'options' => [
@@ -41,7 +41,7 @@ $categories = [
             ],
         ],
     ],
-    'Bohr' => [
+    'BohrHeld' => [
         [
             'question' => 'Ben je into andere culturen?',
             'options' => [
@@ -61,7 +61,7 @@ $categories = [
             ],
         ],
     ],
-    'Limey' => [
+    'LimeyHeld' => [
         [
             'question' => 'Stel je voor, iemand verrast je',
             'options' => [
@@ -147,7 +147,7 @@ $_SESSION["held"] = $winningCategory;
     <div class="image-wrapper" style="position: relative; overflow: hidden; pointer-events: none;">
         <img src="./images/Overgang.png" class="quiz-image" style="width: 100%; height: auto;">
     </div>
-    <?php if ($quizEnded): header("Location: WinningHeld"); ?>
+    <?php if ($quizEnded): header("Location: $winningCategory"); ?>
         <ul>
             <?php foreach ($categoryPoints as $category => $points): ?>
                 <li><?php echo $category; ?>: <?php echo $points; ?></li>
