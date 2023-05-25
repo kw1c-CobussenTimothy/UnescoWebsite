@@ -133,7 +133,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !$quizEnded) {
 // Retrieve the category points from the session
 $categoryPoints = $_SESSION['categoryPoints'];
 $totalPoints = $_SESSION['totalPoints'];
-print_r($categoryPoints);
 
 // Find the category with the highest points
 $highestPoints = max($categoryPoints);
@@ -143,41 +142,43 @@ $_SESSION["held"] = $winningCategory;
 ?>
 
 <!-- Quiz form -->
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Quiz System</title>
-</head>
 <body>
-<?php if ($quizEnded): header("Location: WinningHeld"); ?>
-    <h3>Quiz Ended</h3>
-    <h4>Category Points:</h4>
-    <ul>
-        <?php foreach ($categoryPoints as $category => $points): ?>
-            <li><?php echo $category; ?>: <?php echo $points; ?></li>
-        <?php endforeach; ?>
-    </ul>
-    <h4>Total Points: <?php echo $totalPoints; ?></h4>
-<?php else: ?>
-    <form method="post" action="">
-        <?php
-        // Get the current category, question, and options
-        $category = array_keys($categories)[$categoryIndex];
-        $question = $categories[$category][$questionIndex]['question'];
-        $options = $categories[$category][$questionIndex]['options'];
+<div class="col-12 quiz" style="position: relative;">
+    <div class="image-wrapper" style="position: relative; overflow: hidden; pointer-events: none;">
+        <img src="./images/Overgang.png" class="quiz-image" style="width: 100%; height: auto;">
+    </div>
+    <?php if ($quizEnded): header("Location: WinningHeld"); ?>
+        <ul>
+            <?php foreach ($categoryPoints as $category => $points): ?>
+                <li><?php echo $category; ?>: <?php echo $points; ?></li>
+            <?php endforeach; ?>
+        </ul>
+        <h4>Total Points: <?php echo $totalPoints; ?></h4>
+    <?php else: ?>
+        <form method="post" action="">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+            <?php
+            // Get the current category, question, and options
+            $category = array_keys($categories)[$categoryIndex];
+            $question = $categories[$category][$questionIndex]['question'];
+            $options = $categories[$category][$questionIndex]['options'];
 
-        // Display the current category and question
-        echo "<h2>$category</h2>";
-        echo "<p>$question</p>";
+            // Display the current category and question
+            echo "<p class='quiz-vraag'>$question</p>";
 
-        // Generate radio buttons for the question options
-        foreach ($options as $option => $points) {
-            echo "<input type='radio' name='answer' value='$option'> $option<br>";
-        }
-        ?>
-
-        <input type="submit" value="Next">
-    </form>
-<?php endif; ?>
+            // Generate radio buttons for the question options
+            foreach ($options as $option => $points) {
+                echo "<div class='form-check'>";
+                echo "<input class='form-check-input' type='radio' name='answer' value='$option' id='$option' required>";
+                echo "<label class='form-check-label button' for='$option'>$option</label>";
+                echo "</div>";
+            }
+            ?>
+                <div style="text-align: center;">
+                    <button class="button2 form-check" type="submit">Next</button>
+                </div>
+            </div>
+        </form>
+    <?php endif; ?>
+</div>
 </body>
-</html>
