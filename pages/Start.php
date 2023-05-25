@@ -28,9 +28,9 @@
             </p>                           
           </div>
         </p>
-        <img src="images/vliegtuigkw1c.gif" style="position: absolute; margin-top: 140%;" data-toggle="collapse" data-target="#kw1c">
+        <img src="images/vliegtuigkw1c.gif" style="position: absolute; margin-top: 130%;" data-toggle="collapse" data-target="#kw1c">
         <p>
-          <div class="b-background1 collapse show" style="position: absolute; margin-top: 205%; margin-left: 50%;" id="kw1c">
+          <div class="b-background1 collapse show" style="position: absolute; margin-top: 190%; margin-left: 50%;" id="kw1c">
             <h1>KW1C UNESCO SCHOOL</h1>
             <p class="txt-button bb-background1" style="font-size: 35px;">
               Het Koning Willem I College is als Unesco-school deel van een wereldwijd netwerk met meer dan 9700 scholen. <br>
