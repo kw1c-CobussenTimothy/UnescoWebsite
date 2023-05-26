@@ -85,45 +85,102 @@
 <script>
 function Spinny() {
     var Image1 = document.getElementById("VeraImage");
-    
-    Image1.classList.add("spinny");
+
+    if(Image1.classList.contains("Vera")) {
+        Image1.classList.add("spinny");
+        Image1.classList.remove("Vera");
+    setTimeout(() => {
+        Image1.src="/UnescoWebsite/images/Vera.png";
+        Image1.classList.remove("spinny");
+        Image1.classList.add("spinny2");
+    }, 2500);
+    } else {
+        Image1.classList.add("spinny");
+        Image1.classList.add("Vera");
     setTimeout(() => {
         Image1.src="/UnescoWebsite/images/Raeve.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
+    }
+    setTimeout(() => {
+        Image1.classList.remove("spinny2");
+    }, 5000);
+    
 }
 
 function Spinny2() {
     var Image1 = document.getElementById("TatianaImage");
-    
-    Image1.classList.add("spinny");
+
+    if(Image1.classList.contains("Tatiana")) {
+        Image1.classList.add("spinny");
+        Image1.classList.remove("Tatiana");
+    setTimeout(() => {
+        Image1.src="/UnescoWebsite/images/Tatiana.png";
+        Image1.classList.remove("spinny");
+        Image1.classList.add("spinny2");
+    }, 2500);
+    } else {
+        Image1.classList.add("spinny");
+        Image1.classList.add("Tatiana");
     setTimeout(() => {
         Image1.src="/UnescoWebsite/images/Tianat.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
+    }
+    setTimeout(() => {
+        Image1.classList.remove("spinny2");
+    }, 5000);
 }
 
 function Spinny3() {
     var Image1 = document.getElementById("RobImage");
-    
-    Image1.classList.add("spinny");
+
+    if(Image1.classList.contains("Rob")) {
+        Image1.classList.add("spinny");
+        Image1.classList.remove("Rob");
+    setTimeout(() => {
+        Image1.src="/UnescoWebsite/images/Rob.png";
+        Image1.classList.remove("spinny");
+        Image1.classList.add("spinny2");
+    }, 2500);
+    } else {
+        Image1.classList.add("spinny");
+        Image1.classList.add("Rob");
     setTimeout(() => {
         Image1.src="/UnescoWebsite/images/Bohr.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
+    }
+    setTimeout(() => {
+        Image1.classList.remove("spinny2");
+    }, 5000);    
 }
 
 function Spinny4() {
     var Image1 = document.getElementById("EmilyImage");
-    
-    Image1.classList.add("spinny");
+
+    if(Image1.classList.contains("Emily")) {
+        Image1.classList.add("spinny");
+        Image1.classList.remove("Emily");
+    setTimeout(() => {
+        Image1.src="/UnescoWebsite/images/Emily.png";
+        Image1.classList.remove("spinny");
+        Image1.classList.add("spinny2");
+    }, 2500);
+    } else {
+        Image1.classList.add("spinny");
+        Image1.classList.add("Emily");
     setTimeout(() => {
         Image1.src="/UnescoWebsite/images/Limey.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
+    }
+    setTimeout(() => {
+        Image1.classList.remove("spinny2");
+    }, 5000);  
 }
 </script>
