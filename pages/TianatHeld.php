@@ -1,8 +1,8 @@
 <main>
     <div class="col-12">        
         <div class="row col-12">
-            <h1 style="position:absolute; margin-top: 30%; margin-left: 15%;" class="guardian-tekst2"><strong>Vrede en mensenrechten</strong></h1>
-            <h1 style="position:absolute; margin-top: 37%; margin-left: 15%;" class="guardian-tekst2"><strong><i>Tatiana/Tianat</i></strong></h1>
+            <h1 style="position:absolute; margin-top: 35%; margin-left: 15%;" class="guardian-tekst2"><strong>Vrede<br>& <br> Mensenrechten</strong></h1>
+            <h1 style="position:absolute; margin-top: 62%; margin-left: 15%;" class="guardian-tekst2"><strong><i>Tatiana/Tianat</i></strong></h1>
             <div class="col-8 d-flex justify-content-center align-items-center">
                 <img  src="./images/tianat.png" style=" margin-top: 200%; margin-left: 10%;">
             </div>

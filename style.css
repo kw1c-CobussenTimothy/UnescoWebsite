@@ -130,6 +130,13 @@ body{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
+  .heartbeat-tekst {
+    animation-name: heartbeat;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    font-size: 50px;
+  }
 
   @keyframes heartbeat {
     0% {
