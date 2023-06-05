@@ -16,8 +16,8 @@
       <div class="col-12 col-lg-6 mx-5 d-flex justify-content-center">
         <img src="./images/beginlijn.png" class="beginlijn-class img-fluid"> 
         <p>
-          <div id="text1" style="position: absolute; margin-top: 60%;" data-toggle="collapse" data-target="#unesco">What the</div>
-          <div style="position: absolute; margin-top:65%;" id="text2" data-toggle="collapse" data-target="#unesco"> Unesco?!</div>
+          <div style="position: absolute; margin-top: 60%;" data-toggle="collapse" data-target="#unesco" class="heartbeat-tekst">What the</div>
+          <div style="position: absolute; margin-top:65%;" data-toggle="collapse" data-target="#unesco" class="heartbeat-tekst"> Unesco?!</div>
           <div class="b-background collapse show" style="position: absolute; margin-top: 65%; margin-right: 50%;" id="unesco">
             <h1>Unesco-scholennetwerk</h1>
             <p class="txt-button bb-background" style="font-size: 35px;">
