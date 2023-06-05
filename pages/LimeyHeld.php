@@ -9,15 +9,50 @@
             <div class="col-4">
                 <img style="margin-left: 105%;" class="banner" src="./images/bannerblauw.png">
                 <div class="card3" style="position: absolute; margin-left: 20%; margin-top: 40%;">
-                    test test test
                 </div> 
+            </div>
+            <div style="position: absolute; font-size: 50px; margin-left: 86.5%; margin-top: 120%;">
+                <h1 style="margin-left: 20%; color: black;" class="guardian-tekst2"><i>Dit is Limey</i></h1>
+                <p class="mt-5" style="font-size: 41px; color: black;">
+                Emily zit in het eerste jaar van de<br> 
+                koksopleiding. Ze houdt ervan mensen<br> 
+                blij te maken met het heerlijkste eten.<br> 
+                Ze kookt al vanaf kleins af aan voor haar<br> 
+                familie.  
+                </p>
+                <p style="font-size: 41px; color: black;">
+                    Ze waren heel hecht als gezin.<br> 
+                    Nu zij en haar broer ouder worden merkt<br> 
+                    Emily dat er meer afstand ontstaat in het<br> 
+                    gezin.Na de zoveelste ruzie gaat Emily<br> 
+                    verdrietig naar haar kamer. Ze zou willen<br> 
+                    dat ze met haar kookkunst de ruzies kon<br> 
+                    oplossen.
+                </p>
+                <p style="font-size: 41px; color: black;">
+                    Ineens verblindt een fel licht<br> 
+                    wat de kamer binnen schijnt, haar zicht<br> 
+                    en voelt Emily iets in zichzelf opborrelen. <br>
+                    Ze loopt naar de keuken en tovert binnen <br> 
+                    2 minuten een feestmaal wat bestaat uit <br> 
+                    alle lievelingsgerechten van haar familie. <br> 
+                    
+                </p>
+                <p style="font-size: 41px; color: black;">
+                    Haar ouders en broer staan versteld, <br>
+                    ze gaan samen aan tafel en onder het<br> 
+                    eten praten ze hun meningsverschillen<br> 
+                    uit. Als superheld heet ze Limey, degene <br> 
+                    die mensen bij elkaar brengt <br>
+                    en verbindt waar dat hard nodig is. <br>
+                </p>
             </div>
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center">              
             <img class="rotate" src="./images/rotate.png" style="margin-right: 35%;">    
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center text-center" style="margin-left: 30%;">
-            <a id="helden-link" class="helden-link-pagina" href="helden" style="margin-top: 20%;"><strong>klik hier voor alle helden!</strong></a>
+            <a id="helden-link" class="helden-link-pagina" href="helden" style="margin-top: 40%;"><strong>klik hier voor alle helden!</strong></a>
         </div>
     </div>
     <script>

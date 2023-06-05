@@ -9,15 +9,43 @@
             <div class="col-4">
                 <img style="margin-left: 105%;" class="banner" src="./images/banneroranje.png">
                 <div class="card1" style="position: absolute; margin-left: 20%; margin-top: 40%;">
-                    test test test
                 </div> 
+            </div>
+            <div style="position: absolute; font-size: 50px; margin-left: 86.5%; margin-top: 120%;">
+                <h1 style="margin-left: 20%;" class="guardian-tekst2"><i>Dit is Tianat</i></h1>
+                <p class="mt-5" style="font-size: 41px;">
+                    Tatiana komt uit Kiev en leert <br> 
+                    voor Allround Constructiewerker. Zij is<br>  
+                    statushouder en omdat ze moest <br> 
+                    vluchten heeft ze alles achter moeten <br> 
+                    laten.
+                </p>
+                <p style="font-size: 41px;">
+                    Sommige van haar vrienden zijn <br> 
+                    gevlucht, anderen zijn daar gebleven. De <br>
+                    beelden in het nieuws laten zien dat het <br> 
+                    wel jaren kan duren voordat alles wat is <br> 
+                    verwoest is hersteld. Na de oorlog wil ze <br> 
+                    terug naar Oekraïne om te helpen haar <br>
+                    moederland weer op te bouwen. <br> 
+                </p> 
+                <p style="font-size: 41px;">
+                    Dit verlangen wordt op een dag zo groot<br> 
+                    dat ook zij zichzelf ziet veranderen. Een<br> 
+                    licht  van binnen uit straalt en zij wordt <br> 
+                    megasterk en zonder moeite kan ze de <br> 
+                    zwaarste dingen tillen. Deze superkracht <br> 
+                    zal haar in staat stellen te helpen met de wederopbouw. <br> 
+                    Tatiana is veranderd in Tianat <br> 
+                    die strijd voor vrede en mensenrechten.
+                </p> 
             </div>
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center">              
             <img class="rotate" src="./images/rotate.png" style="margin-right: 35%;">    
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center text-center" style="margin-left: 30%;">
-            <a id="helden-link" class="helden-link-pagina" href="helden" style="margin-top: 20%;"><strong>klik hier voor alle helden!</strong></a>
+            <a id="helden-link" class="helden-link-pagina" href="helden" style="margin-top: 47%;"><strong>klik hier voor alle helden!</strong></a>
         </div>
     </div>
     <script>

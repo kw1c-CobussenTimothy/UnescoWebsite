@@ -9,15 +9,45 @@
             <div class="col-4">
                 <img style="margin-left: 105%;" class="banner" src="./images/bannergroen.png">
                 <div class="card" style="position: absolute; margin-left: 20%; margin-top: 40%;">
-                    test test test
                 </div> 
+            </div>
+            <div style="position: absolute; font-size: 50px; margin-left: 86.5%; margin-top: 120%; color: black;">
+                    <h1 style="margin-left: 20%;" class="guardian-tekst2"><i>Dit is Raeve</i></h1>
+                    <p class="mt-5" style="font-size: 41px;">
+                        Zij studeert mediavormgeving bij <br> 
+                        ICT & Creatief. Daarnaast heeft ze een<br> 
+                        bijbaan in  een restaurant. Er wordt daar<br> 
+                        vaak eten verspilt. Porties zijn te groot<br> 
+                        en mensen kunnen hunmaaltijd niet op.<br> 
+                        Op een avond serveert Vera een ouder<br> echtpaar en vraagt of alles  
+                        naar<br> wens was. “Het eten is heerlijk”,<br> 
+                        antwoordt de vrouw. De portie is zo<br> groot dat  
+                        ik het niet op krijg en ik vind<br> het 
+                        zonde dat het nu weggegooid <br>
+                        moet worden. <br>
+
+                        Plotseling krijgt Vera een vreemd gevoel<br> 
+                        van binnen. Er straalt een fel licht wat uit<br> 
+                        het niets komt. Wanneer het licht<br> gedoofd is bezit 
+                        ze superkrachten.<br>
+                        Vera is veranderd in Reave en strijdt  
+                        voor<br> duurzaamheid. Vliegensvlug kan zij ultra <br> 
+                        duurzame doggybags toveren die het<br> 
+                        overgebleven voedsel meteen bevriezen<br> 
+                        zodat gasten het eten mee naar huis<br> 
+                        kunnen nemen. Zo vermindert Raeve voedselverspilling.  
+                        Het echtpaar, nog<br> steeds onder de indruk 
+                        van wat er voor<br> hun ogen gebeurde,<br> 
+                        neemt met een glimlach en een <br> 
+                        goedgevulde doggybag afscheid. 
+                    </p> 
             </div>
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center">              
             <img class="rotate" src="./images/rotate.png" style="margin-right: 35%;">    
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center text-center" style="margin-left: 30%;">
-            <a id="helden-link" class="helden-link-pagina" href="helden" style="margin-top: 20%;"><strong>klik hier voor alle helden!</strong></a>
+            <a id="helden-link" class="helden-link-pagina" href="helden" style="margin-top: 30%;"><strong>klik hier voor alle helden!</strong></a>
         </div>
     </div>
     <script>

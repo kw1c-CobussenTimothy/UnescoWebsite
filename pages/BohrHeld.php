@@ -9,15 +9,48 @@
             <div class="col-4">
                 <img style="margin-left: 105%;" class="banner" src="./images/bannerroze.png">
                 <div class="card2" style="position: absolute; margin-left: 20%; margin-top: 40%;">
-                    test test test
                 </div> 
+            </div>
+            <div style="position: absolute; font-size: 50px; margin-left: 86.5%; margin-top: 120%;">
+                <h1 style="margin-left: 20%;" class="guardian-tekst2"><i>Dit is Bohr</i></h1>
+                <p class="mt-5" style="font-size: 41px;">
+                    student Leidinggevende travel <br> 
+                    en hospitality. Tijdens de lunchpauze<br> 
+                    op school ziet hij dat een klasgenoot <br> 
+                    wordt gepest vanwege zijn Aziatische<br> 
+                    afkomst.  
+                </p>
+                <p style="font-size: 41px;">
+                    Rob heeft een hekel aan <br> 
+                    discriminatie en buitensluiten hij komt <br> 
+                    daarom in actie. Wanneer Rob de <br>
+                    pestkop aan wil spreken op zijn gedrag <br>
+                    voelt Rob een krachtig gevoel in zijn <br> 
+                    borst opwellen en ziet hij een fel licht <br> 
+                    om zich heen. 
+                </p>
+                <p style="font-size: 41px;">
+                    Wanneer hij de pester <br> 
+                    aanraakt bij zijn schouder blijkt Rob <br> 
+                    te zijn veranderd in Bohr, een superheld <br> 
+                    met ‘teleportatiekrachten'.  Op deze <br> 
+                    manier neemt hij de pestkop mee naar <br> 
+                    een andere cultuur en kan zo laten zien <br> 
+                    hoe mooi en interessant andere culturen<br> 
+                    zijn. Bohr laat de pester een tijd achter in <br> 
+                    Japan. Daarna teleporteert Bohr de <br> 
+                    jongen terug. Na deze ervaring blijkt hij <br> 
+                    meer begrip te hebben voor mensen <br>
+                    met een andere culturele achtergrond <br> 
+                    dan de zijne.  
+                </p>
             </div>
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center">              
             <img class="rotate" src="./images/rotate.png" style="margin-right: 35%;">    
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center text-center" style="margin-left: 30%;">
-            <a id="helden-link" class="helden-link-pagina" href="helden" style="margin-top: 20%;"><strong>klik hier voor alle helden!</strong></a>
+            <a id="helden-link" class="helden-link-pagina" href="helden" style="margin-top: 40%;"><strong>klik hier voor alle helden!</strong></a>
         </div>
     </div>
     <script>

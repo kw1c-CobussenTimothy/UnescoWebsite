@@ -44,7 +44,7 @@
     </div>      
   </div>
     <div class="col-6" >
-        <a href="portaal" id="image1">
+        <a href="<?= ROOT ?>/portaal" id="image1">
           <img src="images/portaal.png" id="portaal1" class=" portaal-class" style="position:absolute; margin-top: 40%;">
           <img src="images/sterrenveel.gif" id="portaal1" class="veel-sterren" style="position: absolute; margin-left: 30%; margin-top: 20%;"> 
         </a>
@@ -67,40 +67,7 @@
       imageLoadedFlag = true;
     }
 
-    function animateText() {
-      const text1 = document.getElementById("text1");
-      const text2 = document.getElementById("text2");
-
-      // Show "What the" text slowly
-      text1.style.animationName = "fadeInSlow";
-      text1.style.animationDuration = "5s";
-      text1.style.animationDelay = "0s";
-      text1.style.opacity = "1";
-
-      // After the first text is fully displayed, show "Unesco" text faster
-      setTimeout(function() {
-        text2.style.animationName = "fadeInFast";
-        text2.style.animationDuration = "1s";
-        text2.style.animationDelay = "0s";
-        text2.style.opacity = "1";
-      }, 5000);
-
-      // Reset animations and repeat
-      setTimeout(function() {
-        text1.style.animationName = "";
-        text1.style.opacity = "0";
-
-        text2.style.animationName = "stayVisible";
-        text2.style.animationDuration = "infinite";
-        text2.style.animationDelay = "0s";
-
-        animateText(); // Repeat the animation
-      }, 7000);
-    }
-
-    animateText(); // Start the animation
-
-    function hideAndShowImage() {
+  function hideAndShowImage() {
   const arrowImage = document.querySelector('img[src="./images/arrow.gif"]');
   const originalImagePosition = arrowImage.style.marginLeft; // Store the original margin-left value
 
@@ -110,7 +77,7 @@
     arrowImage.style.visibility = 'visible'; // Show the image after 4 seconds
     arrowImage.style.marginLeft = originalImagePosition; // Restore the original margin-left value
   }, 4000);
-}
+    }
 
 hideAndShowImage();
 
