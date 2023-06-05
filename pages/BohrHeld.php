@@ -4,10 +4,10 @@
             <h1 style="position:absolute; margin-top: 30%; margin-left: 15%;" class="guardian-tekst2"><strong>Intercultureel</strong></h1>
             <h1 style="position:absolute; margin-top: 37%; margin-left: 15%;" class="guardian-tekst2"><strong><i>Rob/Bohr</i></strong></h1>
             <div class="col-8 d-flex justify-content-center align-items-center">
-                <img class="raeve"  src="./images/bohr.png" style=" margin-top: 200%;">
+                <img id="BohrImage" class="raeve"  src="./images/bohr.png" style=" margin-top: 200%;">
             </div>
             <div class="col-4">
-                <img style="margin-left: 105%;" class="banner" src="./images/bannerroze.png">
+                    <img style="margin-left: 105%;" class="banner" src="./images/bannerroze.png">
                 <div class="card2" style="position: absolute; margin-left: 20%; margin-top: 40%;">
                 </div> 
             </div>
@@ -47,12 +47,33 @@
             </div>
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center">              
-            <img class="rotate" src="./images/rotate.png" style="margin-right: 35%;">    
+            <img onclick="Spinny()"class="rotate heartbeat-img" src="./images/rotate.png" style="margin-right: 35%;">    
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center text-center" style="margin-left: 30%;">
             <a id="helden-link" class="helden-link-pagina" href="helden" style="margin-top: 40%;"><strong>klik hier voor alle helden!</strong></a>
         </div>
     </div>
+    <style>
+        .hidden  {
+            display: none;
+        }
+
+        .spinny{
+            animation: spinY 2.5s ease-in 1s;
+        } 
+        .spinny2{
+            animation: spinY 2.5s ease-out 1.5s;
+        } 
+
+        @keyframes spinY {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(1800deg);
+            }
+        }
+    </style>
     <script>
         function fadeEffect(element, duration) {
         element.style.opacity = 0;
@@ -86,5 +107,31 @@
     setInterval(() => {
         fadeEffect(link, duration);
     }, duration * 2);
+    
+    function Spinny() {
+    var Image1 = document.getElementById("BohrImage");
+
+    if(Image1.classList.contains("Bohr")) {
+        Image1.classList.add("spinny");
+        Image1.classList.remove("Bohr");
+    setTimeout(() => {
+        Image1.src="/UnescoWebsite/images/Bohr.png";
+        Image1.classList.remove("spinny");
+        Image1.classList.add("spinny2");
+    }, 2500);
+    } else {
+        Image1.classList.add("spinny");
+        Image1.classList.add("Bohr");
+    setTimeout(() => {
+        Image1.src="/UnescoWebsite/images/Rob.png";
+        Image1.classList.remove("spinny");
+        Image1.classList.add("spinny2");
+    }, 2500);
+    }
+    setTimeout(() => {
+        Image1.classList.remove("spinny2");
+    }, 5000);
+    
+    }   
     </script>
 </main>

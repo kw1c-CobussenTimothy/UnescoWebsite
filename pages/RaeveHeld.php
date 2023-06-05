@@ -4,7 +4,7 @@
             <h1 style="position:absolute; margin-top: 30%; margin-left: 15%;" class="guardian-tekst2"><strong>Duurzaamheid</strong></h1>
             <h1 style="position:absolute; margin-top: 37%; margin-left: 15%;" class="guardian-tekst2"><strong><i>Vera/Raeve</i></strong></h1>
             <div class="col-8 d-flex justify-content-center align-items-center">
-                <img class="raeve"  src="./images/raeve.png" style=" margin-top: 200%;">
+                <img id="RaeveImage" class="raeve"  src="./images/raeve.png" style=" margin-top: 200%;">
             </div>
             <div class="col-4">
                 <img style="margin-left: 105%;" class="banner" src="./images/bannergroen.png">
@@ -44,12 +44,33 @@
             </div>
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center">              
-            <img class="rotate" src="./images/rotate.png" style="margin-right: 35%;">    
+            <img onclick="Spinny()" class="rotate heartbeat-img" src="./images/rotate.png" style="margin-right: 35%;">    
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center text-center" style="margin-left: 30%;">
-            <a id="helden-link" class="helden-link-pagina" href="helden" style="margin-top: 30%;"><strong>klik hier voor alle helden!</strong></a>
+            <a id="helden-link" class="helden-link-pagina" href="helden" style="margin-top: 40%;"><strong>klik hier voor alle helden!</strong></a>
         </div>
     </div>
+    <style>
+        .hidden  {
+            display: none;
+        }
+
+        .spinny{
+            animation: spinY 2.5s ease-in 1s;
+        } 
+        .spinny2{
+            animation: spinY 2.5s ease-out 1.5s;
+        } 
+
+        @keyframes spinY {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(1800deg);
+            }
+        }
+    </style>
     <script>
         function fadeEffect(element, duration) {
         element.style.opacity = 0;
@@ -83,5 +104,31 @@
     setInterval(() => {
         fadeEffect(link, duration);
     }, duration * 2);
+
+    function Spinny() {
+    var Image1 = document.getElementById("RaeveImage");
+
+    if(Image1.classList.contains("Raeve")) {
+        Image1.classList.add("spinny");
+        Image1.classList.remove("Raeve");
+    setTimeout(() => {
+        Image1.src="/UnescoWebsite/images/Raeve.png";
+        Image1.classList.remove("spinny");
+        Image1.classList.add("spinny2");
+    }, 2500);
+    } else {
+        Image1.classList.add("spinny");
+        Image1.classList.add("Raeve");
+    setTimeout(() => {
+        Image1.src="/UnescoWebsite/images/vera.png";
+        Image1.classList.remove("spinny");
+        Image1.classList.add("spinny2");
+    }, 2500);
+    }
+    setTimeout(() => {
+        Image1.classList.remove("spinny2");
+    }, 5000);
+    
+    }
     </script>
 </main>
