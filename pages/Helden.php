@@ -1,5 +1,6 @@
-<html>
-    <body>
+<?php
+require_once "../includes/header.php";
+?>
         <div class="container col-12">
             <div class="row">
                 <div class="col-6 d-flex justify-content-center align-items-center">
@@ -184,3 +185,6 @@ function Spinny4() {
     }, 5000);  
 }
 </script>
+<?php
+require_once "../includes/footer.php";
+?>

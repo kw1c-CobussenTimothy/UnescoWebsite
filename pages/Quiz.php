@@ -1,4 +1,8 @@
 <?php
+require_once "../includes/header.php";
+?>
+
+<?php
 // Define the questions and their corresponding points for each category
 $categories = [
     'RaeveHeld' => [
@@ -117,12 +121,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !$quizEnded) {
     // Redirect to the next question or show the result if there are no more questions
     if ($questionIndex + 1 < count($categories[$category])) {
         $nextQuestionIndex = $questionIndex + 1;
-        header("Location: quiz?q=$nextQuestionIndex&c=$categoryIndex");
+        header("Location: quiz.php?q=$nextQuestionIndex&c=$categoryIndex");
         exit();
     } elseif ($categoryIndex + 1 < count($categories)) {
         $nextCategoryIndex = $categoryIndex + 1;
         $nextQuestionIndex = 0;
-        header("Location: quiz?q=$nextQuestionIndex&c=$nextCategoryIndex");
+        header("Location: quiz.php?q=$nextQuestionIndex&c=$nextCategoryIndex");
         exit();
     } else {
         // Quiz has ended
@@ -181,4 +185,6 @@ $_SESSION["held"] = $winningCategory;
         </form>
     <?php endif; ?>
 </div>
-</body>
+<?php
+require_once "../includes/footer.php";
+?>

@@ -1,3 +1,6 @@
+<?php
+require_once "../includes/header.php";
+?>
 <main>
     <div class="col-12">        
         <div class="row col-12">
@@ -135,3 +138,6 @@
     }   
     </script>
 </main>
+<?php
+require_once "../includes/footer.php";
+?>

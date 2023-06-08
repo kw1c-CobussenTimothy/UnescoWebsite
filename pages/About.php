@@ -1,6 +1,6 @@
-<html>
-
-<body>
+<?php
+require_once "../includes/header.php";
+?>
     <div class="container col-12">
 
         <div class="row">
@@ -59,6 +59,6 @@
         
 
     </div>
-
-    </body>
-</html>
+<?php
+require_once "../includes/footer.php";
+?>
