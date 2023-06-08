@@ -47,9 +47,9 @@ require_once "includes/header.php";
             </div>
         </div>
         <div class="col-6" >
-            <a href="<?= ROOT ?>pages/Portaal.php" id="image1">
-                <img src="<?= ROOT ?>images/portaal.png" id="portaal1" class=" portaal-class" style="position:absolute; margin-top: 40%;">
-                <img src="<?= ROOT ?>images/sterrenveel.gif" id="portaal1" class="veel-sterren" style="position: absolute; margin-left: 30%; margin-top: 20%;">
+            <a href="./pages/Portaal.php" id="image1">
+                <img src="./images/portaal.png" id="portaal1" class=" portaal-class" style="position:absolute; margin-top: 40%;">
+                <img src="./images/sterrenveel.gif" id="portaal1" class="veel-sterren" style="position: absolute; margin-left: 30%; margin-top: 20%;">
             </a>
         </div>
         <script>
@@ -83,10 +83,6 @@ require_once "includes/header.php";
             }
 
             hideAndShowImage();
-
-
-
-
         </script>
     </main>
 <?php
