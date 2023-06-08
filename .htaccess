@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /UnescoWebsite/
+    RewriteRule ^(admin)($|/) - [L]
+
+    RewriteRule \.css$ - [L]
+    RewriteRule \.png$ - [L]
+    RewriteRule \.js$ - [L]
+    RewriteRule \.gif$ - [L]
+    RewriteRule \.jpg$ - [L]
+    RewriteRule \.mp3$ - [L]
+    RewriteRule \.otf$ - [L]
+
+    RewriteRule ^ index.php [L]
+</IfModule>

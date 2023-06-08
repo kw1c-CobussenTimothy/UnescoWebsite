@@ -1,10 +1,9 @@
-<?php
-require_once "../includes/header.php";
-?>
+<html>
+    <body>
         <div class="container col-12">
             <div class="row">
                 <div class="col-6 d-flex justify-content-center align-items-center">
-                    <img id="VeraImage" class="image2 px-4 py-3" src="<?= ROOT ?>images/Vera.png">
+                    <img id="VeraImage" class="image2 px-4 py-3" src="/UnescoWebsite/images/Vera.png"> 
                 </div>
                 <div class="col-6 center-block fs-5"><br>
                     <p>Dit is Vera. Zij studeert mediavormgeving bij ICT & Creatief. Daarnaast heeft ze een bijbaan in een restaurant. Er wordt daar vaak eten weggegooid Porties zijn te groot en mensen kunnen hun maaltijd niet op.  Op een avond serveert Vera een ouder echtpaar en vraagt of alles naar wens was. 
@@ -31,14 +30,14 @@ require_once "../includes/header.php";
                     </p>
                     <p>Tatiana is veranderd in Tianat die strijd voor vrede en mensenrechten</p>
                 </div>
-                <div class="col-6 d-flex justify-content-center align-items-center"><img id="TatianaImage" class="image2 px-4 py-3" src="<?= ROOT ?>images/Tatiana.png"></div>
+                <div class="col-6 d-flex justify-content-center align-items-center"><img id="TatianaImage" class="image2 px-4 py-3" src="/UnescoWebsite/images/Tatiana.png"></div>
                 <div class="col-12 mt-1">
                     <button class="col-4" style="margin-left: 58.333%;" onclick="Spinny2()">switch</button> 
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-6 d-flex justify-content-center align-items-center"><img id="RobImage" class="image2 px-4 py-3" src="<?= ROOT ?>images/Rob.png"></div>
+                <div class="col-6 d-flex justify-content-center align-items-center"><img id="RobImage" class="image2 px-4 py-3" src="/UnescoWebsite/images/Rob.png"></div>
                 <div class="col-6 center-block fs-5"><br>
                     <p>Dit is Rob, student Leidinggevende travel en hospitality. Tijdens de lunchpauze op school ziet hij dat een klasgenoot wordt gepest vanwege zijn Aziatische afkomst. Rob heeft een hekel aan discriminatie en buitensluiten hij springt daarom in actie. Wanneer Rob de pestkop aan wil spreken op zijn gedrag voelt Rob een krachtig gevoel in zijn borst opwellen en ziet een fel licht om zich heen. Wanneer hij de pester aanraakt bij zijn schouder blijkt Rob te zijn veranderd in Bohr, een superheld met teleportatiekrachten. Op deze manier neemt hij de pestkop mee naar een andere cultuur en kan zo laten zien hoe mooi en interessant andere culturen zijn. Bohr laat de pester een tijd achter in Japan. Daarna teleporteert Bohr de jongen terug. Na deze ervaring blijkt hij meer begrip te hebben voor mensen met een andere culturele achtergrond dan de zijne. </p>
                 </div>
@@ -51,7 +50,7 @@ require_once "../includes/header.php";
                 <div class="col-6 center-block fs-5"><br>
                     <p>Emily zit in het eerste jaar van de koksopleiding. Ze houdt ervan mensen blij te maken met het heerlijkste eten. Ze kookt al vanaf kleins af aan voor haar familie. Ze waren heel hecht als gezin nu zij en haar broer ouder worden merkt Emily ze dat er meer afstand ontstaat in haar gezin. Na de zoveelste ruzie gaat Emily verdrietig naar haar kamer ze zou willen dat ze met haar kookkunst de ruzies kon oplossen. Ineens verblindt een fel licht wat de kamer binnen schijnt haar zicht en voelt Emily iets in zichzelf opborrelen. Ze loopt naar de keuken en tovert binnen 2 minuten een feestmaal wat bestaat uit alle lievelingsgerechten van haar familie. Haar ouders en broer staan versteld, ze gaan samen aan tafel en onder het eten praten ze hun conflicten uit. Als superheld heet ze Limey degene die mensen bij elkaar brengt en verbindt waar dat hard nodig is. </p>
                 </div>
-                <div class="col-6 d-flex justify-content-center align-items-center"><img id="EmilyImage" class="image2 px-4 py-3" src="<?= ROOT ?>images/Emily.png"></div>
+                <div class="col-6 d-flex justify-content-center align-items-center"><img id="EmilyImage" class="image2 px-4 py-3" src="/UnescoWebsite/images/Emily.png"></div>
                 <div class="col-12 mt-1">
                     <button class="col-4" style="margin-left: 58.333%;" onclick="Spinny4()">switch</button> 
                 </div>
@@ -91,7 +90,7 @@ function Spinny() {
         Image1.classList.add("spinny");
         Image1.classList.remove("Vera");
     setTimeout(() => {
-        Image1.src="<?= ROOT ?>images/Vera.png";
+        Image1.src="/UnescoWebsite/images/Vera.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
@@ -99,7 +98,7 @@ function Spinny() {
         Image1.classList.add("spinny");
         Image1.classList.add("Vera");
     setTimeout(() => {
-        Image1.src="<?= ROOT ?>images/Raeve.png";
+        Image1.src="/UnescoWebsite/images/Raeve.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
@@ -117,7 +116,7 @@ function Spinny2() {
         Image1.classList.add("spinny");
         Image1.classList.remove("Tatiana");
     setTimeout(() => {
-        Image1.src="<?= ROOT ?>images/Tatiana.png";
+        Image1.src="/UnescoWebsite/images/Tatiana.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
@@ -125,7 +124,7 @@ function Spinny2() {
         Image1.classList.add("spinny");
         Image1.classList.add("Tatiana");
     setTimeout(() => {
-        Image1.src="<?= ROOT ?>images/Tianat.png";
+        Image1.src="/UnescoWebsite/images/Tianat.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
@@ -142,7 +141,7 @@ function Spinny3() {
         Image1.classList.add("spinny");
         Image1.classList.remove("Rob");
     setTimeout(() => {
-        Image1.src="<?= ROOT ?>images/Rob.png";
+        Image1.src="/UnescoWebsite/images/Rob.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
@@ -150,7 +149,7 @@ function Spinny3() {
         Image1.classList.add("spinny");
         Image1.classList.add("Rob");
     setTimeout(() => {
-        Image1.src="<?= ROOT ?>images/Bohr.png";
+        Image1.src="/UnescoWebsite/images/Bohr.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
@@ -167,7 +166,7 @@ function Spinny4() {
         Image1.classList.add("spinny");
         Image1.classList.remove("Emily");
     setTimeout(() => {
-        Image1.src="<?= ROOT ?>images/Emily.png";
+        Image1.src="/UnescoWebsite/images/Emily.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
@@ -175,7 +174,7 @@ function Spinny4() {
         Image1.classList.add("spinny");
         Image1.classList.add("Emily");
     setTimeout(() => {
-        Image1.src="<?= ROOT ?>images/Limey.png";
+        Image1.src="/UnescoWebsite/images/Limey.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
@@ -185,6 +184,3 @@ function Spinny4() {
     }, 5000);  
 }
 </script>
-<?php
-require_once "../includes/footer.php";
-?>

@@ -1,13 +1,10 @@
-<?php
-require_once "../includes/header.php";
-?>
 <main>
     <div class="col-12">        
         <div class="row col-12">
             <h1 style="position:absolute; margin-top: 30%; margin-left: 15%;" class="guardian-tekst2"><strong>WereldBurgerschap</strong></h1>
             <h1 style="position:absolute; margin-top: 37%; margin-left: 15%;" class="guardian-tekst2"><strong><i>Emily/Limey</i></strong></h1>
             <div class="col-8 d-flex justify-content-center align-items-center">
-                <img id="LimeyImage" src="<?= ROOT ?>images/limey.png" style=" margin-top: 233.5%;">
+                <img id="LimeyImage" src="./images/limey.png" style=" margin-top: 233.5%;">
             </div>
             <div class="col-4">
                 <img style="margin-left: 105%;" class="banner" src="./images/bannerblauw.png">
@@ -52,7 +49,7 @@ require_once "../includes/header.php";
             </div>
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center">              
-            <img onclick="Spinny()" class="rotate heartbeat-img" src="<?= ROOT ?>images/rotate.png" style="margin-right: 35%;">    
+            <img onclick="Spinny()" class="rotate heartbeat-img" src="./images/rotate.png" style="margin-right: 35%;">    
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center text-center" style="margin-left: 30%;">
             <a id="helden-link" class="helden-link-pagina" href="helden" style="margin-top: 40%;"><strong>klik hier voor alle helden!</strong></a>
@@ -120,7 +117,7 @@ require_once "../includes/header.php";
         Image1.classList.add("spinny");
         Image1.classList.remove("Limey");
     setTimeout(() => {
-        Image1.src="<?= ROOT ?>images/Limey.png";
+        Image1.src="/UnescoWebsite/images/Limey.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
@@ -128,7 +125,7 @@ require_once "../includes/header.php";
         Image1.classList.add("spinny");
         Image1.classList.add("Limey");
     setTimeout(() => {
-        Image1.src="<?= ROOT ?>images/emily.png";
+        Image1.src="/UnescoWebsite/images/emily.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
@@ -140,6 +137,3 @@ require_once "../includes/header.php";
     } 
     </script>
 </main>
-<?php
-require_once "../includes/footer.php";
-?>
