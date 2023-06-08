@@ -4,11 +4,11 @@
 	<a href="javascript:void(0)" id="closebutton" onclick="Close()">&times;</a>	
 	<div style="margin-top: 20%;">
 		<!-- Verwijzingen naar de andere pagina's / sites -->
-		<a href="<?= ROOT ?>">Hoofdpagina</a>
-		<a style="color: #B2BEB5;" href="<?= ROOT ?>/Quiz">Ontdek je Innerlijke Held</a>
+		<a href="<?php echo  ROOT ?>">Hoofdpagina</a>
+		<a style="color: #B2BEB5;" href="<?php echo  ROOT ?>/pages/Quiz.php">Ontdek je Innerlijke Held</a>
 		<a href="https://sdgs.un.org/goals" target="_blank">Unesco klimaatdoelen</a>
-		<a style="color: #B2BEB5;" href="<?= ROOT ?>/Helden">Helden</a>
-		<a href="<?= ROOT ?>/About">De makers</a>
+		<a style="color: #B2BEB5;" href="<?php echo ROOT ?>/pages/Helden.php">Helden</a>
+		<a href="<?php echo  ROOT ?>pages/About.php">De makers</a>
 	</div>
 </div>
 
