@@ -1,7 +1,5 @@
 <?php
-require_once "../includes/header.php";
-const ROOT = "https://unesco.mapmedia.nu/";
-?>
+require_once "../includes/header.php";?>
 <main>
     <div class="col-12">        
         <div class="row col-12">

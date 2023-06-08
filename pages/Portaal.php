@@ -1,7 +1,5 @@
 <?php
-require_once "../includes/header.php";
-const ROOT = "https://unesco.mapmedia.nu/";
-?>
+require_once "../includes/header.php";?>
 <main>
        
 <!--Hierin staan de afbeeldingen voor het portaal en met behulp van boostrap is het ook responsive-->
