@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 // basis verwijzing
-const ROOT = "http://localhost/UnescoWebsite/";
+const ROOT = "https://unesco.mapmedia.nu/";
 
 // classes
 //require_once("classes/Pages.php");
