@@ -20,7 +20,7 @@
           <div style="position: absolute; margin-top:65%;" data-toggle="collapse" data-target="#unesco" class="heartbeat-tekst"> Unesco?!</div>
           <div class="b-background collapse show" style="position: absolute; margin-top: 65%; margin-right: 50%;" id="unesco">
             <h1>Unesco-scholennetwerk</h1>
-            <p class="txt-button bb-background" style="font-size: 35px;">
+            <p class="txt-button bb-background" style="font-size: 37px;">
               <em><strong>‘Since wars begin in the minds of men, it is in the minds of men that the defences of peace must be constructed’.</strong></em><br>
               Deze gedachte vormt de essentie van de missie van Unesco. <br> 
               Unesco-scholen ondersteunen deze missie: ze maken hun leerlingen vertrouwd met het Unesco-gedachtegoed en dragen <br>
@@ -32,7 +32,7 @@
         <p>
           <div class="b-background1 collapse show" style="position: absolute; margin-top: 190%; margin-left: 50%;" id="kw1c">
             <h1>KW1C UNESCO SCHOOL</h1>
-            <p class="txt-button bb-background1" style="font-size: 35px;">
+            <p class="txt-button bb-background1" style="font-size: 36px;">
               Het Koning Willem I College is als Unesco-school deel van een wereldwijd netwerk met meer dan 9700 scholen. <br>
               In Nederland zijn 75 scholen aangesloten waarvan ongeveer 10 mbo’s. <br>
               Wij vinden het als school belangrijk te streven naar een betere wereld. <br>
