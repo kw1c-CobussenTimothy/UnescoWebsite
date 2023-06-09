@@ -40,7 +40,16 @@ session_start();
             require_once("required/Hamburger.php");
         }
         if ($page == "Start" ) {
-            require_once("pages/" . $page . ".php");
+            require_once("pages/About.php");
+            require_once("pages/BohrHeld.php");
+            require_once("pages/Helden.php");
+            require_once("pages/LimeyHeld.php");
+            require_once("pages/Portaal.php");
+            require_once("pages/Quiz.php");
+            require_once("pages/RaeveHeld.php");
+            require_once("pages/Start.php");
+            require_once("pages/TianatHeld.php");
+            require_once("pages/WinningHeld.php");
         } else {
             $page = empty($page) ? "Start" : $page;
 
