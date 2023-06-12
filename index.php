@@ -48,7 +48,7 @@ include "includes/Hamburger.php";
                 </div>
             </div>
             <div class="col-6" >
-                <a href="<?= ROOT ?>/portaal" id="image1">
+                <a href="<?= ROOT ?>pages/Portaal.php" id="image1">
                     <img src="<?= ROOT ?>images/portaal.png" id="portaal1" class=" portaal-class" style="position:absolute; margin-top: 40%;">
                     <img src="<?= ROOT ?>images/sterrenveel.gif" id="portaal1" class="veel-sterren" style="position: absolute; margin-left: 30%; margin-top: 20%;">
                 </a>

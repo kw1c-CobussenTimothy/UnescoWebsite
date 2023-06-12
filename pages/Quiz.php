@@ -203,7 +203,7 @@ if($quizEnded){
             }
             ?>
                 <div style="text-align: center;">
-                    <button class="button2 form-check" type="submit">Next</button>
+                    <button class="button2 form-check" type="submit">Volgende</button>
                 </div>
             </div>
         </form>
