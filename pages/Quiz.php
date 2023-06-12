@@ -1,5 +1,7 @@
 <?php
 // Define the questions and their corresponding points for each category
+const ROOT = "https://unesco.mapmedia.nu/";
+session_start();
 $categories = [
     'RaeveHeld' => [
         [
@@ -83,7 +85,7 @@ $categories = [
     ]
     // Add more categories and questions here...
 ];
-
+//echo count($categories);
 if (!isset($_SESSION['quizStarted'])) {
     $_SESSION['quizStarted'] = true;
     $_SESSION['categoryPoints'] = array_fill_keys(array_keys($categories), 0);
@@ -117,16 +119,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !$quizEnded) {
     // Redirect to the next question or show the result if there are no more questions
     if ($questionIndex + 1 < count($categories[$category])) {
         $nextQuestionIndex = $questionIndex + 1;
-        header("Location: quiz?q=$nextQuestionIndex&c=$categoryIndex");
+        header("Location: Quiz.php?q=$nextQuestionIndex&c=$categoryIndex");
         exit();
     } elseif ($categoryIndex + 1 < count($categories)) {
         $nextCategoryIndex = $categoryIndex + 1;
         $nextQuestionIndex = 0;
-        header("Location: quiz?q=$nextQuestionIndex&c=$nextCategoryIndex");
+        header("Location: Quiz.php?q=$nextQuestionIndex&c=$nextCategoryIndex");
         exit();
     } else {
         // Quiz has ended
         $quizEnded = true;
+
     }
 }
 
@@ -137,17 +140,42 @@ $totalPoints = $_SESSION['totalPoints'];
 // Find the category with the highest points
 $highestPoints = max($categoryPoints);
 $winningCategory = array_search($highestPoints, $categoryPoints);
+//$winningCategory;
+//$winningCategory = lcfirst($winningCategory);
+$_SESSION["held"] =  $winningCategory;
 
-$_SESSION["held"] = $winningCategory;
+if($quizEnded){
+    header("Location: $winningCategory.php");
+}
 ?>
+<!-- html / pagina oproepen -->
+<!DOCTYPE html>
+<html lang="nl">
 
+<head>
+    <!-- bootstrap en eventueel eigen css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- icon -->
+    <link rel="icon" href="<? echo ROOT ?>images/schildlogo.png">
+    <link rel="stylesheet" href="<? echo ROOT ?>style.css">
+
+    <title>UNESCO Guardians</title>
+</head>
 <!-- Quiz form -->
 <body>
 <div class="col-12 quiz" style="position: relative;">
     <div class="image-wrapper" style="position: relative; overflow: hidden; pointer-events: none;">
-        <img src="./images/Overgang.png" class="quiz-image" style="width: 100%; height: auto;">
+        <img src="<?= ROOT ?>images/overgang.png" class="quiz-image" style="width: 100%; height: auto;">
     </div>
-    <?php if ($quizEnded): header("Location: $winningCategory"); ?>
+    <?php if ($quizEnded) :
+        echo $url = "$winningCategory.php";
+       header("Location: LimeyHeld.php");
+        ?>
         <ul>
             <?php foreach ($categoryPoints as $category => $points): ?>
                 <li><?php echo $category; ?>: <?php echo $points; ?></li>

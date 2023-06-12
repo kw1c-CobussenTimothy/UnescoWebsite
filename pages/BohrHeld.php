@@ -1,13 +1,17 @@
+<?php
+include "../includes/header.php";
+include "../includes/Hamburger.php";
+?>
 <main>
     <div class="col-12">        
         <div class="row col-12">
             <h1 style="position:absolute; margin-top: 30%; margin-left: 15%;" class="guardian-tekst2"><strong>Intercultureel</strong></h1>
             <h1 style="position:absolute; margin-top: 37%; margin-left: 15%;" class="guardian-tekst2"><strong><i>Rob/Bohr</i></strong></h1>
             <div class="col-8 d-flex justify-content-center align-items-center">
-                <img id="BohrImage" class="raeve"  src="./images/bohr.png" style=" margin-top: 200%;">
+                <img id="BohrImage" class="raeve"  src="<?= ROOT ?>images/bohr.png" style=" margin-top: 200%;">
             </div>
             <div class="col-4">
-                    <img style="margin-left: 105%;" class="banner" src="./images/bannerroze.png">
+                    <img style="margin-left: 105%;" class="banner" src="<?= ROOT ?>images/bannerroze.png">
                 <div class="card2" style="position: absolute; margin-left: 20%; margin-top: 40%;">
                 </div> 
             </div>
@@ -47,7 +51,7 @@
             </div>
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center">              
-            <img onclick="Spinny()"class="rotate heartbeat-img" src="./images/rotate.png" style="margin-right: 35%;">    
+            <img onclick="Spinny()"class="rotate heartbeat-img" src="<?= ROOT ?>images/rotate.png" style="margin-right: 35%;">    
         </div>
         <div class="col-12 d-flex justify-content-center align-items-center text-center" style="margin-left: 30%;">
             <a id="helden-link" class="helden-link-pagina" href="helden" style="margin-top: 40%;"><strong>klik hier voor alle helden!</strong></a>
@@ -115,7 +119,7 @@
         Image1.classList.add("spinny");
         Image1.classList.remove("Bohr");
     setTimeout(() => {
-        Image1.src="/UnescoWebsite/images/Bohr.png";
+        Image1.src="<?= ROOT ?>images/Bohr.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
@@ -123,7 +127,7 @@
         Image1.classList.add("spinny");
         Image1.classList.add("Bohr");
     setTimeout(() => {
-        Image1.src="/UnescoWebsite/images/Rob.png";
+        Image1.src="<?= ROOT ?>images/Rob.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
@@ -135,3 +139,6 @@
     }   
     </script>
 </main>
+<?php
+include "includes/footer.php"
+?>

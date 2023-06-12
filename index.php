@@ -1,62 +1,95 @@
 <?php
-
-declare(strict_types=1);
-
-// basis verwijzing
-const ROOT = "/UnescoWebsite";
-
-// classes
-require_once("classes/Pages.php");
-require_once("classes/DBConn.php");
-
-// session_start wordt zo opgeroepen over de gehele website
-session_start();
-
+include "includes/header.php";
+include "includes/Hamburger.php";
 ?>
-<!-- html / pagina oproepen -->
-<!DOCTYPE html>
-<html lang="nl">
-
-    <head>
-        <!-- bootstrap en eventueel eigen css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        
-    <!-- icon -->
-        <?php $page = Pages::getHeader(); ?>
-            <link rel="icon" href="./images/schildlogo.png">
-            <link rel="stylesheet" href="style.css">
-        
-        <title>UNESCO Guardians</title>
-    </head>
-    <body>
         <!-- pages worden zo opgeroepen, $page = de pagina wat je als eerst wilt laten zien-->
+        <main>
+            <!-- Start pagina, met behulp van de javascript code krijg je het effect dat je door het portaal gaat -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 d-flex mx-5 justify-content-center align-items-center position-absolute">
+                        <div class="max-width: 646vh;">
+                            <img src="<?= ROOT ?>images/arrow.gif" class="img-fluid" style="width: 60%; height: 60%; margin-top: 485%; position: static;">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex mx-5 justify-content-center align-items-center" style="margin-top: 58vh;">
+                        <div class="max-width: 646vh;">
+                            <img src="<?= ROOT ?>images/animatie.gif" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mx-5 d-flex justify-content-center">
+                        <img src="<?= ROOT ?>images/beginlijn.png" class="beginlijn-class img-fluid">
+                        <p>
+                        <div style="position: absolute; margin-top: 60%;" data-toggle="collapse" data-target="#unesco" class="heartbeat-tekst">What the</div>
+                        <div style="position: absolute; margin-top:65%;" data-toggle="collapse" data-target="#unesco" class="heartbeat-tekst"> Unesco?!</div>
+                        <div class="b-background collapse show" style="position: absolute; margin-top: 65%; margin-right: 50%;" id="unesco">
+                            <h1>Unesco-scholennetwerk</h1>
+                            <p class="txt-button bb-background" style="font-size: 37px;">
+                                <em><strong>‘Since wars begin in the minds of men, it is in the minds of men that the defences of peace must be constructed’.</strong></em><br>
+                                Deze gedachte vormt de essentie van de missie van Unesco. <br>
+                                Unesco-scholen ondersteunen deze missie: ze maken hun leerlingen vertrouwd met het Unesco-gedachtegoed en dragen <br>
+                                zo hun steentje bij aan vrede en verdraagzaamheid.
+                            </p>
+                        </div>
+                        </p>
+                        <img src="<?= ROOT ?>images/vliegtuigkw1c.gif" style="position: absolute; margin-top: 130%;" data-toggle="collapse" data-target="#kw1c">
+                        <p>
+                        <div class="b-background1 collapse show" style="position: absolute; margin-top: 190%; margin-left: 50%;" id="kw1c">
+                            <h1>KW1C UNESCO SCHOOL</h1>
+                            <p class="txt-button bb-background1" style="font-size: 36px;">
+                                Het Koning Willem I College is als Unesco-school deel van een wereldwijd netwerk met meer dan 9700 scholen. <br>
+                                In Nederland zijn 75 scholen aangesloten waarvan ongeveer 10 mbo’s. <br>
+                                Wij vinden het als school belangrijk te streven naar een betere wereld. <br>
+                                Met behulp van deze app ga je ontdekken hoe jij als student je steentje bij kunt dragen.
+                            </p>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" >
+                <a href="<?= ROOT ?>/portaal" id="image1">
+                    <img src="<?= ROOT ?>images/portaal.png" id="portaal1" class=" portaal-class" style="position:absolute; margin-top: 40%;">
+                    <img src="<?= ROOT ?>images/sterrenveel.gif" id="portaal1" class="veel-sterren" style="position: absolute; margin-left: 30%; margin-top: 20%;">
+                </a>
+            </div>
+            <script>
+                let currentImage = 1;
+                let imageLoadedFlag = false;
+
+                document.querySelector('#unesco').classList.remove('show');
+                document.querySelector('#kw1c').classList.remove('show');
+
+                function playAudio() {
+                    document.getElementById("sound").play(); // Play the audio
+                    setTimeout(function() {
+                        window.location.href = "next-page-url"; // Navigate to the next page after a delay
+                    }, 2500); // Set the delay in milliseconds
+                }
+
+                function imageLoaded() {
+                    imageLoadedFlag = true;
+                }
+
+                function hideAndShowImage() {
+                    const arrowImage = document.querySelector('img[src="<?= ROOT ?>images/arrow.gif"]');
+                    const originalImagePosition = arrowImage.style.marginLeft; // Store the original margin-left value
+
+                    arrowImage.style.visibility = 'hidden'; // Hide the image initially
+
+                    setTimeout(function() {
+                        arrowImage.style.visibility = 'visible'; // Show the image after 4 seconds
+                        arrowImage.style.marginLeft = originalImagePosition; // Restore the original margin-left value
+                    }, 4000);
+                }
+
+                hideAndShowImage();
+
+
+
+
+            </script>
+        </main>
         <?php
-        $page = Pages::getHeader();
-        if ($page != "quiz") {
-            require_once("required/Hamburger.php");
-        }
-        if ($page == "Start" ) {
-            require_once("pages/About.php");
-            require_once("pages/BohrHeld.php");
-            require_once("pages/Helden.php");
-            require_once("pages/LimeyHeld.php");
-            require_once("pages/Portaal.php");
-            require_once("pages/Quiz.php");
-            require_once("pages/RaeveHeld.php");
-            require_once("pages/Start.php");
-            require_once("pages/TianatHeld.php");
-            require_once("pages/WinningHeld.php");
-        } else {
-            $page = empty($page) ? "Start" : $page;
-
-            require_once("pages/" . $page . ".php");
-        }
-        
+        include "includes/footer.php";
         ?>
-    </body>
-
-</html>
