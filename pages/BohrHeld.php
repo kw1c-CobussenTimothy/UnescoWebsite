@@ -119,7 +119,7 @@ include "../includes/Hamburger.php";
         Image1.classList.add("spinny");
         Image1.classList.remove("Bohr");
     setTimeout(() => {
-        Image1.src="<?= ROOT ?>images/Bohr.png";
+        Image1.src="<?= ROOT ?>images/bohr.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
@@ -127,7 +127,7 @@ include "../includes/Hamburger.php";
         Image1.classList.add("spinny");
         Image1.classList.add("Bohr");
     setTimeout(() => {
-        Image1.src="<?= ROOT ?>images/Rob.png";
+        Image1.src="<?= ROOT ?>images/rob.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
