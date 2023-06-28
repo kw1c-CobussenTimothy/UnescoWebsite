@@ -15,7 +15,7 @@ include "../includes/Hamburger.php";
                 <div class="card2" style="position: absolute; margin-left: 20%; margin-top: 40%;">
                 </div> 
             </div>
-            <div style="position: absolute; font-size: 50px; margin-left: 86.5%; margin-top: 120%;">
+            <div style="position: absolute; font-size: 50px; margin-left: 86.5%; margin-top: 40%;">
                 <h1 style="margin-left: 20%;" class="guardian-tekst2"><i>Dit is Bohr</i></h1>
                 <p class="mt-5" style="font-size: 41px;">
                     student Leidinggevende travel <br> 
