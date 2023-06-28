@@ -1,6 +1,8 @@
 <?php
 // Define the questions and their corresponding points for each category
-const ROOT = "https://unesco.mapmedia.nu/";
+// const ROOT = "https://unesco.mapmedia.nu/";
+ const ROOT = "https://localhost/";
+
 session_start();
 $categories = [
     'RaeveHeld' => [
