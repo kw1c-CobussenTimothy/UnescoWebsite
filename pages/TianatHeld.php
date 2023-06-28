@@ -122,7 +122,7 @@ include "../includes/Hamburger.php";
         Image1.classList.add("spinny");
         Image1.classList.add("Tianat");
     setTimeout(() => {
-        Image1.src="<?= ROOT ?>images/Tatiana.png";
+        Image1.src="<?= ROOT ?>images/tatiana.png";
         Image1.classList.remove("spinny");
         Image1.classList.add("spinny2");
     }, 2500);
