@@ -22,7 +22,7 @@ include "includes/Hamburger.php";
                         <p>
                         <div style="position: absolute; margin-top: 60%;" data-toggle="collapse" data-target="#unesco" class="heartbeat-tekst">What the</div>
                         <div style="position: absolute; margin-top:65%;" data-toggle="collapse" data-target="#unesco" class="heartbeat-tekst"> Unesco?!</div>
-                        <div class="b-background collapse show" style="position: absolute; margin-top: 65%; margin-right: 50%; margin-left:5%;" id="unesco">
+                        <div class="b-background collapse show" style="position: absolute; margin-top: 75%; margin-right: 50%; margin-left:5%;" id="unesco">
                             <h1>Unesco-scholennetwerk</h1>
                             <p class="txt-button bb-background" style="font-size: 37px;" >
                                 <em><strong>‘Since wars begin in the minds of men, it is in the minds of men that the defences of peace must be constructed’.</strong></em><br>
